@@ -1,0 +1,17 @@
+const etudiant = require("./Etudiant");
+const admin = require("./Admin");
+//const Password=require("../configuration/Hash_Password");
+let etudiant1 = new etudiant(1, "Beloufa", "Soufiane", "s.beloufa@esi-sba.dz");
+//let etudiant2 = new etudiant(2, "Chetoui", "Hossem", "h.chectoui@esi-sba.dz");
+//let etudiant3 = new etudiant(3, "Hadj Brahim", "Yacine", "y.hadjbrahim@esi-sba.dz");
+//let etudiant4 = new etudiant(4, "Chadouli", "Manel", "m.chadouli@esi-sba.dz");
+//let etudiant5 = new etudiant(5, "Bennacer", "Nor Farah", "n.bennacer@esi-sba.dz");
+//console.log(etudiant1.toString());
+etudiant1.add_Etudiant(etudiant1);
+//etudiant2.add_Etudiant(etudiant2);
+//etudiant3.add_Etudiant();
+//etudiant4.add_Etudiant();
+//let admin1 = new admin(1, "s.beloufa@esi-sba.dz", 'admin');
+//console.log(admin1.toString());
+//admin1.add_Admin(admin1);
+//etudiant5.add_Etudiant();

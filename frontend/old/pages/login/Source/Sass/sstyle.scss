@@ -1,0 +1,89 @@
+@import "../../../shared/Sass/base";
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+	background: $colorLight;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Poppins', sans-serif;
+	height: 100vh;
+	
+}
+.header img{
+	position: absolute;
+	left: 90%;  
+	height: 10%;
+    top: 10%;
+}
+h1{
+   
+	font-weight: bolder;
+	font-size: $font-large;
+    padding: $spacing-smaller ;	
+}
+span{ 
+    font-size: $font-small;
+    color: #6d6e6e;
+    padding: $spacing-smaller;
+	}
+.container {
+	background-color: $colorLight;
+	border-radius: $spacing-smaller;
+	overflow: hidden;
+	width: $spacing-largest*12.5;
+	max-width: 100%;
+	min-height: $spacing-largest*7;
+}
+form {
+	background-color: $colorLight;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 $spacing-larger;
+	height: 100%;
+	text-align: center;
+}
+.v80-12{
+    top: 20%;
+	left: 48%;
+    position: absolute;
+    color: $colorBlue;
+}
+button {
+	border-radius: $spacing-smaller;
+	background-color: $colorBlue;
+	color: $colorLight;
+	font-size: $font-normal;
+	font-weight: 600;
+	padding: $spacing-small $spacing-larger;
+	text-transform: uppercase;
+	transition: 0.2s ease-in;  
+	&:hover{
+		background-color: $colorLightBlue;
+	}
+}
+.v45_20 img{
+	width: 2%;
+	position: absolute;
+	top: 600px;
+	left: 30px;
+}
+.v45_21{
+	width: 220px;
+	position: absolute;
+	top: 590px;
+	left:45px;
+	font-family: Poppins;
+	font-weight: Regular;
+	font-size: $font-normal;
+	opacity: 1;
+	text-align: left;
+	color:$colorDark;
+}

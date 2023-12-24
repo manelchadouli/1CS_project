@@ -1,0 +1,255 @@
+@import "../../../shared/Sass/base";
+
+
+// Popup box
+.popup-container {
+	// Dark background for the whole page
+	background-color: rgba($colorDark, 0.3);
+
+	// Make the popup take full width
+	width: 100%;
+
+	height: 100vh;
+
+	// Make it appear in top of the page
+	z-index: 2;
+
+	// Make it invisible when hidden
+	opacity: 0;
+
+	// Make it non-clickable when hidden
+	pointer-events: none;
+
+	// Give it a fixed position so it doesn't affect the rest of the page
+	position: fixed;
+
+	// Make it start from the top
+	top: 0px;
+
+	// Content of the popup box
+	>form {
+		// Give the content space left, right and top
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: $spacing-largest;
+		margin-bottom: $spacing-largest;
+
+		// Give it a white background
+		background-color: $colorLight;
+
+		// Give it a height and a width
+		height: 75vh;
+		width: $spacing-largest *12;
+
+		// Make the overflow scroll
+		overflow-y: scroll;
+
+		// Scrollbar color and width for firefox
+		scrollbar-color: $colorGray $colorLight;
+		scrollbar-width: thin;
+
+		// Give it some border radius
+		border-radius: $spacing-small;
+
+		// Give it some padding
+		padding: $spacing-small;
+
+		// Make the container display grid
+		display: grid;
+
+		// Give it two rows
+		grid-template-columns: 1fr 1fe;
+
+		// specify the layout of the elements of the popup
+		grid-template-areas: "one one"
+			"two two"
+			"three four"
+			"five five"
+			"six six"
+			"seven eight"
+			"nine ."
+			". ten";
+
+		>*:nth-child(1) {
+			// Give this element a name in the grid			 
+			grid-area: one;
+
+			// Make it centered
+			justify-self: center;
+
+			// Specify font size and weight
+			font-size: $font-largest;
+			font-weight: 700;
+
+		}
+
+		// Give each child a name so we can specify it's layout
+		>*:nth-child(2) {
+			grid-area: two;
+		}
+
+		>*:nth-child(3) {
+			grid-area: three;
+		}
+
+		>*:nth-child(4) {
+			grid-area: four;
+		}
+
+		>*:nth-child(5) {
+			grid-area: five;
+		}
+
+		>*:nth-child(6) {
+			grid-area: six;
+		}
+
+		>*:nth-child(7) {
+			grid-area: seven;
+		}
+
+		>*:nth-child(8) {
+			grid-area: eight;
+		}
+
+		>*:nth-child(9) {
+			grid-area: nine;
+		}
+
+		>*:nth-child(10) {
+			grid-area: ten;
+
+			// the cancel button styles
+			button:nth-child(1) {
+				transition: 0.3s ease-in;
+				color: $colorOrange;
+				border: 2px solid $colorOrange;
+				background-color: $colorLight;
+				padding: $spacing-small $spacing-normal;
+				border-radius: $spacing-small;
+				margin: $spacing-normal;
+
+				&:hover {
+					box-shadow: 0px 0px $spacing-small $colorOrange;
+				}
+			}
+
+
+			// the submit button styles
+			button:nth-child(2) {
+				// give it a smooth animation
+				transition: 0.3s ease-in;
+
+				// Set forground color
+				color: $colorLightBlue;
+
+				// Give it a border
+				border: 2px solid $colorLightBlue;
+
+				// Set the background color
+				background-color: $colorLight;
+
+				// Give it some spacing
+				padding: $spacing-small $spacing-normal;
+				margin: $spacing-normal;
+
+				// Give it a border radius
+				border-radius: $spacing-small;
+
+				// On hover and focus
+				&:hover,
+				&:focus {
+					// Give the button a box shadow
+					box-shadow: 0px 0px $spacing-small $colorLightBlue;
+				}
+			}
+		}
+
+		// Give a margin to all the elements in the popup
+		>* {
+			margin: $spacing-normal;
+		}
+
+		>div {
+			textarea {
+				// Don't allow the user to resize the text field
+				resize: none;
+
+				// Give the text inside some padding
+				padding: $spacing-small;
+
+				// Make the background transparent
+				background-color: transparent;
+
+				// Make it's sizing border box, so we don't have any more margins when we give it a border
+				box-sizing: border-box;
+
+				// Make it take all available space
+				width: 100%;
+
+				// Give it a border radius
+				border-radius: $spacing-smaller;
+
+				// Give it a border
+				border: 1px solid $colorGray;
+
+				// Give it a slight box shadow
+				box-shadow: 0px 0px 4px $colorGray;
+
+				// Set the background color
+				background-color: $colorLight;
+
+				// Give it some spacing from the top
+				margin-top: $spacing-smaller;
+
+				// When focused
+				&:focus {
+					// Give the text field a border
+					border: 2px solid $colorLightBlue;
+
+					// And give it a box shadow
+					box-shadow: 0px 0px 4px $colorLightBlue;
+
+					// Remove the ugly outline that comes by default
+					outline: none;
+				}
+			}
+
+			// Label style
+			label {
+				// Set font size and weight
+				font-size: $font-large;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+
+// Scrollbar for other browsers
+::-webkit-scrollbar {
+	width: $spacing-small;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: $spacing-small;
+	background-color: $colorLight;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: $spacing-small;
+	background-color: $colorLightGray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: $colorGray;
+}
+
+
+
+// This class will make the element appear by removing the "opaciy 0", and give it back pointer events
+.appear {
+	opacity: 1;
+	pointer-events: all;
+	position: absolute;
+}

@@ -1,0 +1,41 @@
+<!--@ include header @-->
+
+<div class="page">
+    <h1>page affecter les encadreurs</h1>   
+    <div class="equipes">
+        <h2>Les équipes qui existent</h2>
+        <div>
+            <div>
+                <span>Chetoui hossem</span>
+                <span>Titre du theme</span>
+                <i></i>
+            </div>
+            <div>
+                <span>Chetoui hossem</span>
+                <span>Titre du theme</span>
+                <i></i>
+                <p>Chetoui ahmed</p>
+                <p>islam hossem</p>
+                <p>ahmed allag hossem</p>
+            </div>
+            <div>
+                <span>Chetoui hossem</span>
+                <span>Titre du theme</span>
+                <i></i>
+        </div>
+        </div>
+    </div>
+
+    <div class="encadreurs">
+        <h2>Les encadreurs possibles de l'équipe sélectionné</h2>
+        <div>
+            <div><span>mohammed amine</span><span>contact.google@yahoo.dz</span><button>+</button></div>
+            <div><span>mohammed amine</span><span>contact.google@yahoo.dz</span><button>+</button></div>
+            <div><span>mohammed amine</span><span>contact.google@yahoo.dz</span><button>+</button></div>
+        </div>
+    </div>
+
+
+</div>
+
+<!--@ include footer @-->

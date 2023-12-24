@@ -1,0 +1,125 @@
+<!--@ include header @-->
+<div class="mainPage">
+    <h1>Main Page</h1><br>
+    <div class="content">
+        <div>
+            <div>
+                <span>Titre du livrable</span>
+                <span>nom du createur</span>
+                <span>
+                    <i></i>
+                    <img src="./Assets/icons/down-arrow.svg" alt="download" width="13px" height="13px">
+                </span>
+                <div class="hidden">
+                    <p>le premier commentaire dans cette page</p>
+                    <p>second commentaire dans cette page</p>
+                    <p>le third commentaire dans cette page</p>
+                </div>
+            </div>
+            <div>
+                <span>Titre du livrable</span>
+                <span>nom du createur</span>
+                <span>
+                    <i></i>
+                    <img src="./Assets/icons/down-arrow.svg" alt="download" width="13px" height="13px">
+                </span>
+                <div class="hidden">
+                    <p>le premier commentaire dans cette page</p>
+                    <p>second commentaire dans cette page</p>
+                    <p>le third commentaire dans cette page</p>
+                </div>
+            </div>
+            <div>
+                <span>Titre du livrable</span>
+                <span>nom du createur</span>
+                <span>
+                    <i></i>
+                    <img src="./Assets/icons/down-arrow.svg" alt="download" width="13px" height="13px">
+                </span>
+                <div class="hidden">
+                    <p>le premier commentaire dans cette page</p>
+                    <p>second commentaire dans cette page</p>
+                    <p>le third commentaire dans cette page</p>
+                </div>
+            </div>
+            <div>
+                <span>Titre du livrable</span>
+                <span>nom du createur</span>
+                <span>
+                    <i></i>
+                    <img src="./Assets/icons/down-arrow.svg" alt="download" width="13px" height="13px">
+                </span>
+                <div class="hidden">
+                    <p>le premier commentaire dans cette page</p>
+                    <p>second commentaire dans cette page</p>
+                    <p>le third commentaire dans cette page</p>
+                </div>
+            </div>
+            <div>
+                <span>Titre du livrable</span>
+                <span>nom du createur</span>
+                <span>
+                    <i></i>
+                    <img src="./Assets/icons/down-arrow.svg" alt="download" width="13px" height="13px">
+                </span>
+                <div>
+                    <p>le premier commentaire dans cette page</p>
+                    <p>second commentaire dans cette page</p>
+                    <p>le third commentaire dans cette page</p>
+                </div>
+            </div>
+            <div>
+                <span>Titre du livrable</span>
+                <span>nom du creat Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, optio! Enim quod harum totam ducimus veritatis libero exercitationem pariatur adipisci, rerum esse minus animi quaerat repellendus consequatur rem asperiores inventore! eur</span>
+                <span>
+                    <i></i>
+                    <img src="./Assets/icons/down-arrow.svg" alt="download" width="13px" height="13px">
+                </span>
+                <div>
+                    <p>le premier commentaire dans cette page</p>
+                    <p>second commentaire dans cette page</p>
+                    <p>le third commentaire dans cette page</p>
+                    <p>le premier commentaire dans cette page</p>
+                    <p>second commentaire dans cette page</p>
+                    <p>le third commentaire dans cette page</p>
+                    <p>le premier commentaire dans cette page</p>
+                    <p>second commentaire dans cette page</p>
+                    <p>le third commentaire dans cette page</p>
+                    <p>le premier commentaire dans cette page</p>
+                    <p>second commentaire dans cette page</p>
+                    <p>le third commentaire dans cette page</p>
+                </div>
+            </div>
+            <div>
+                <span>Titre du livrable Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, non excepturi. Quam, quae vero. Aut assumenda eveniet ea. Necessitatibus officiis, debitis deserunt qui veniam minus sequi id illum laboriosam quod?</span>
+                <span>nom du createur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus adipisci dolore beatae modi at, vel aspernatur vero accusamus repellat natus ea explicabo porro voluptatum temporibus omnis sapiente cum alias ratione?</span>
+                <span>
+                    <i></i>
+                    <img src="./Assets/icons/down-arrow.svg" alt="download" width="13px" height="13px">
+                </span>
+                <div>
+                    <p>le premier commentaire dans cette Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, necessitatibus neque error, ad esse illo a dolore architecto ex magni, quo quas ab. A expedita porro sint veniam autem soluta. page</p>
+                    <p>second commentaire dans cette page</p>
+                    <p>le third commentaire dans Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta quod pariatur omnis delectus nobis voluptate voluptates quia. Voluptate corrupti itaque praesentium neque commodi, quam iste atque illum perspiciatis facilis? cette page</p>
+                </div>
+            </div>
+                            
+        </div>
+
+        <div>
+            <h2>Ajouter un nouveau livrable:</h2>
+            <label for="title">Entrez un titre</label>
+            <textarea name="title"></textarea>
+            <label for="fileInput">Selectionez un fichier</label>
+            <span class="selected">
+                <input name="fileInput" type="file">
+                <img src="./Assets/icons/upload-to-cloud.svg" alt="upload file">
+            </span>
+            <div>
+                <button>ajouter</button>
+            </div>
+        </div>    
+    </div>
+</div>  
+
+<!--@ include footer @-->

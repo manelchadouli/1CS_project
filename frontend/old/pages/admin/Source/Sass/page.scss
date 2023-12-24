@@ -1,0 +1,305 @@
+@import "../../../shared/Sass/base";
+
+
+// Page styles
+.page {
+
+	// Make the page centered 
+	margin-left: auto;
+	margin-right: auto;
+
+	// Give it a maximum width
+	max-width: $spacing-largest*16;
+
+	// Give it some padding
+	padding: $spacing-largest;
+
+
+	// Make the page display as a grid
+	display: grid;
+
+	// Set the layout of the grid
+	grid-template-areas:
+		"title title"
+		"teams teachers";
+
+	// Give it some spacing
+	column-gap: $spacing-largest;
+
+	// Make columns have same width
+	grid-template-columns: 1fr 1fr;
+
+
+	// The title of the page
+	h1 {
+		// Specify which area in the grid it has
+		grid-area: title;
+
+		// Font properties
+		font-weight: 600;
+		font-size: $font-largest;
+
+		// Some spacing
+		margin-bottom: $spacing-large;
+
+	}
+
+	// The teams container
+	>.equipes {
+		// Specify which area in the grid it has
+		grid-area: teams;
+
+		// Title of the teams container
+		>h2 {
+			// Set text color
+			color: $colorOrange;
+
+			// Font properties
+			font-weight: 600;
+			font-size: $font-large;
+
+			// Some spacing
+			margin-bottom: $spacing-large;
+			margin-top: $spacing-normal;
+			margin-left: $spacing-smaller;
+		}
+
+
+		// Teams list container
+		>div {
+			// Scrollbar color and width for firefox
+			scrollbar-color: $colorGray $colorLight;
+			scrollbar-width: thin;
+
+			// Scrollbar for other browsers
+			::-webkit-scrollbar {
+				width: $spacing-small;
+			}
+
+			::-webkit-scrollbar-track {
+				border-radius: $spacing-small;
+				background-color: $colorLight;
+			}
+
+			::-webkit-scrollbar-thumb {
+				border-radius: $spacing-small;
+				background-color: $colorLightGray;
+			}
+
+			::-webkit-scrollbar-thumb:hover {
+				background-color: $colorGray;
+			}
+
+			// Some space from the bottom
+			padding-bottom: $spacing-normal;
+
+			// Make over flow scroll 	   
+			overflow-y: auto;
+
+			// Give it a max height
+			max-height: $spacing-largest *5;
+
+			// The team style
+			>div {
+				// Make the children align relative to this div
+				position: relative;
+
+				// The bottom arrow 
+				>i {
+					// right align this element
+					position: absolute;
+					right: $spacing-normal;
+
+					// The color of the arrow
+					border: solid $colorOrange;
+
+					// Thickness of the arrow
+					border-width: 0 3px 3px 0;
+
+					// Make it inline
+					display: inline-block;
+
+					// The size of the arrow
+					padding: 4px;
+
+					// Make it point down
+					transform: rotate(45deg);
+					-webkit-transform: rotate(45deg);
+
+					// On hover
+					&:hover {
+						// Hint to the user that it is clickable
+						cursor: pointer;
+					}
+				}
+
+				// Give this element a border and a box shadow
+				border: 1px solid $colorLightGray;
+				box-shadow: 0px 0px $spacing-smaller $colorGray;
+
+				// Give it some corner radius
+				border-radius: $spacing-normal;
+
+				// Some padding and margin
+				padding: $spacing-normal;
+				margin-top: $spacing-normal;
+				margin-right: $spacing-normal;
+				margin-left: $spacing-smaller;
+
+				// More space between lines
+				line-height: 1.3;
+
+				// the syle of a selected div 
+				// 	border: 1px solid $colorOrange;
+				// 	box-shadow: 0px 0px $spacing-small $colorOrange;
+
+				>span {
+					margin-right: $spacing-normal;
+				}
+
+				>p:nth-child(4) {
+					margin-top: $spacing-smaller;
+					// margin-top: 0;
+				}
+
+				>p {
+					// Foreground color
+					color: rgba($colorDark, 0.6);
+
+					// Font size
+					font-weight: 500;
+					font-size: $font-normal;
+
+					// Some spacing
+					margin-left: $spacing-normal;
+
+					// Change this when you add this to vue
+					// visibility: collapse;
+					// height: 0px;
+
+				}
+
+			}
+		}
+
+	}
+
+
+	// The teachers container
+	>.encadreurs {
+		// Specify which area in the grid it has
+		grid-area: teachers;
+
+		// Title of the teachers container
+		>h2 {
+			// Set text color
+			color: $colorLightBlue;
+
+			// Font properties
+			font-weight: 600;
+			font-size: $font-large;
+
+			// Some spacing
+			margin-bottom: $spacing-normal;
+			margin-top: $spacing-normal;
+			margin-left: $spacing-normal;
+		}
+
+		// Encadreurs list container
+		>div {
+			// Scrollbar color and width for firefox
+			scrollbar-color: $colorGray $colorLight;
+			scrollbar-width: thin;
+
+			// Scrollbar for other browsers
+			::-webkit-scrollbar {
+				width: $spacing-small;
+			}
+
+			::-webkit-scrollbar-track {
+				border-radius: $spacing-small;
+				background-color: $colorLight;
+			}
+
+			::-webkit-scrollbar-thumb {
+				border-radius: $spacing-small;
+				background-color: $colorLightGray;
+			}
+
+			::-webkit-scrollbar-thumb:hover {
+				background-color: $colorGray;
+			}
+
+			// Some space from the bottom
+			padding-bottom: $spacing-normal;
+
+			// Make over flow scroll
+			overflow-y: auto;
+
+			// Give it a max height
+			max-height: $spacing-largest *5;
+
+			// Each teacher element
+			>div {
+				// Remove all additional white space
+				font-size: 0px;
+
+				>span {
+
+					// Set font size
+					font-size: $font-normal;
+
+					// Make the text all in one line
+					display: inline-block;
+
+					// Set oferflow for text
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+
+				>button {
+					background-color: transparent;
+					border: none;
+					font-weight: 700;
+					color: $colorLightBlue;
+
+					&:hover {
+						cursor: pointer;
+						transform: scale(2);
+					}
+				}
+
+				display: flex;
+				justify-content: space-between;
+				font-weight: 500;
+
+				padding: $spacing-normal $spacing-small;
+				margin: $spacing-normal;
+				border-radius: $spacing-small;
+
+
+				// Give this element a border and a box shadow
+				border: 1px solid $colorLightGray;
+				box-shadow: 0px 0px $spacing-smaller $colorLightGray;
+
+
+
+
+				// Set maximum width for the text
+				>span:nth-child(1) {
+					width: $spacing-largest*2;
+				}
+
+				// Set maximum width for the text
+				>span:nth-child(2) {
+					width: $spacing-largest*3;
+				}
+
+			}
+		}
+
+	}
+
+
+}

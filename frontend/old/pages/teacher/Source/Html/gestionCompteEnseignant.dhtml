@@ -1,0 +1,166 @@
+<!--@ include header @-->
+<div class="popup-container">
+        <div>
+            <button class="close">close popup</button>
+        </div>
+    </div>
+    
+    <div class="page-container">
+    <h1>Gestion des comptes des enseignant </h1>
+    <div class="ajouterE">
+    <button class="AjouterE"> Ajouter
+        <i class="fa fa-user" style="font-size:10px "></i>
+    </button>
+    <button class="importer"> Importer 
+        <i class="fa fa-download" style="font-size:10px "></i>
+    </button>
+     </div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Email</th>
+            <th>Spécialité</th>
+            <th>grade</th>
+            <th>Supprimer</th>
+            <th>modifier</th>
+        </tr>
+        
+        <tr>
+            <td><span>0001</span></td>
+            <td>BenSaber</td>
+            <td>Djamel</td>
+            <td>
+                
+                   <span>d.bensaber@esi-sba.dz</span>
+          </td>
+           <td>2CS</td>
+         <td>SIW</td>
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        
+        <tr>
+            <td><span>0001</span></td>
+            <td>BenSaber</td>
+            <td>Djamel</td>
+            <td>
+                <span>d.bensaber@esi-sba.dz</span></td>
+           <td>2CS</td>
+         <td>SIW</td>
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        
+        <tr>
+            <td><span>0001</span></td>
+            <td>BenSaber</td>
+            <td>Djamel</td>
+            <td>
+                <span>d.bensaber@esi-sba.dz</span></td>
+           <td>2CS</td>
+         <td>SIW</td>
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        
+        <tr>
+            <td><span>0001</span></td>
+            <td>BenSaber</td>
+            <td>Djamel</td>
+            <td>
+                <span>d.bensaber@esi-sba.dz</span></td>
+           <td>2CS</td>
+         <td>SIW</td>
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        
+        <tr>
+            <td><span>0001</span></td>
+            <td>BenSaber</td>
+            <td>Djamel</td>
+            <td>
+                <span>d.bensaber@esi-sba.dz</span></td>
+           <td>2CS</td>
+         <td>SIW</td>
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        
+        <tr>
+            <td><span>0001</span></td>
+            <td>BenSaber</td>
+            <td>Djamel</td>
+           <td>
+                <span>d.bensaber@esi-sba.dz</span></td>
+           <td>2CS</td>
+         <td>SIW</td>
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        
+        <tr>
+            <td><span>0001</span></td>
+            <td>BenSaber</td>
+            <td>Djamel</td>
+            <td>
+                <span>d.bensaber@esi-sba.dz</span></td>
+           <td>2CS</td>
+         <td>SIW</td>
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        
+        <tr>
+            <td><span>0001</span></td>
+            <td>Bensaber</td>
+            <td>Djamel</td>
+            <td>
+                <span>d.bensaber@esi-sba.dz</span></td>
+           <td>2CS</td>
+         <td>SIW</td>
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        
+        <tr>
+            <td><span>0001</span></td>
+            <td>BenSaber</td>
+            <td>Djamel</td>
+            <td>
+                <span>d.bensaber@esi-sba.dz</span></td>
+           <td>2CS</td>
+         <td>SIW</td>
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>    
+    </div>
+    
+    
+    
+   </table>
+    
+    
+    
+    
+    <!--@ include footer @-->

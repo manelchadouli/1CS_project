@@ -1,0 +1,49 @@
+<!--@ include header @-->
+<div class="consulterUnTheme">
+    <h1>Titre du theme</h1>
+    <div>
+        <h2>Titre Complet</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, qui ipsam. Porro velit deserunt nemo cupiditate vel fuga nostrum nihil.
+        </p>
+    </div>
+    <div>
+        <h2 >Encadreur</h2>
+        <p>mohammed, ben snane et ahmed</p>
+    </div>
+    <div>
+        <h2 >Niveau</h2>
+        <p>1cs tc</p>
+    </div>
+    <div>
+        <h2 for= "motscles ">Mots Cles</h2>
+        <p>web client-server</p>
+    </div>
+    <div>
+        <h2 for= "resume ">Resume</h2>
+        <p>Le but de ce projet est de concevoir et réaliser une application pour la gestion des projets de fin d’étude au sein de l’ESI de Sidi Bel Abbes. Gestion des comptes et droits d’accès</p>
+    </div>
+    <div>
+        <h2 for= "frontend ">Frontend</h2>
+        <p>Vue.JS, Express, HTML5, CSS3, JavaScript (ou autres langages dédiés)</p>
+    </div>
+    <div>
+        <h2 for= "backend ">Backend</h2>
+        <p>NodeJs (ou autres langages dédiés)</p>
+    </div>
+    <div>
+        <h2 for= "planDeTravail ">Plan De Travail</h2>
+        <p>
+            Analyse et spécification des besoins.</br>
+            Conception</br>
+            Implémentation</br>
+            Vérification et validation</br>
+            Rédaction du Rapport 
+        </p>
+    </div>
+    <div>
+        <button>Fermer</button>
+    </div>
+</div>
+
+<!--@ include footer @-->

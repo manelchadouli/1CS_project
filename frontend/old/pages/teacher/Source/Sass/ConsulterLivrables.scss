@@ -1,0 +1,251 @@
+@import "../../../shared/Sass/base";
+
+.consulterLivrables {
+
+    // Give it some padding
+    padding: $spacing-larger $spacing-largest*2 $spacing-largest*2 $spacing-largest*2;
+
+    // The top part of the page that will contain the buttons
+    >.header {
+        // Align content to the right
+        text-align: right;
+
+        // Some spacing
+        padding: $spacing-small 0px;
+
+        >button {
+
+            // Set forground color
+            color: $colorLightBlue;
+
+            // Give it a border
+            border: 2px solid $colorLightBlue;
+
+            // Set the background color
+            background-color: $colorLight;
+
+            // Give it some spacing
+            padding: $spacing-small $spacing-normal;
+            margin: $spacing-small;
+
+            // Give it a border radius
+            border-radius: $spacing-small;
+
+            // On hover and focus
+            &:hover,
+            &:focus {
+
+                // Give the button a box shadow
+                box-shadow: 0px 0px $spacing-small $colorLightBlue;
+
+                // Make the cursor a hand, indicating it's a clickable thing
+                cursor: pointer;
+            }
+
+
+
+        }
+
+    }
+
+    // The container of the list of livrables and add livrable
+    >.content {
+
+        // The style of each item
+        >div {
+            // Some spacing
+            margin: $spacing-normal;
+            padding: $spacing-small $spacing-smaller;
+
+            // Give it border
+            border: 2px solid $colorLightGray;
+
+            // Give it a drop shadow
+            box-shadow: 0px 0px $spacing-smaller $colorLightGray;
+
+            // Rounded corners
+            border-radius: $spacing-small;
+
+            // Set font weight to be thicker
+            font-weight: 600;
+
+            // The download button
+            >span>*:nth-child(2) {
+
+                // On hover
+                &:hover {
+                    // Hint to the user that it is clickable
+                    cursor: pointer;
+                }
+
+            }
+
+            // The drop down arrow
+            >span>i:nth-child(1) {
+                // The color of the arrow
+                border: solid $colorOrange;
+                // Thickness of the arrow
+                border-width: 0 3px 3px 0;
+
+                // The size of the arrow
+                padding: 4px;
+
+                // Some spacing in the bottom
+                margin-bottom: 3px;
+
+                // Make it inline
+                display: inline-block;
+
+                // Make it point down
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+
+                // On hover
+                &:hover {
+                    // Hint to the user that it is clickable
+                    cursor: pointer;
+                }
+
+
+            }
+
+            // The text style
+            >span {
+                // Set oferflow for text
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                // Some spacing
+                margin: 0px $spacing-small;
+
+                // Display it in one line
+                display: inline-block;
+            }
+
+            // Specify the width of the children
+            >*:nth-child(1) {
+                width: 42%;
+                color: $colorBlue;
+            }
+
+            >*:nth-child(2) {
+                color: $colorBlue;
+                width: 35%;
+            }
+
+            >*:nth-child(3) {
+                width: 10%;
+                text-align: right;
+
+                // Icons inside the last element
+                >* {
+                    margin: 0px 2px 0px $spacing-small;
+                }
+            }
+
+            // Comments container
+            >div {
+                // Some spacing
+                padding: $spacing-normal $spacing-normal $spacing-small $spacing-large;
+
+                // Comment style
+                >p {
+                    // Set color
+                    color: rgba($colorDark, 0.6);
+
+                    // Some spacing
+                    padding: $spacing-normal $spacing-smaller 4px $spacing-smaller;
+
+                    border-bottom: 2px solid $colorGray;
+                }
+
+                // Add comment section
+                >span {
+                    // Make it take full line
+                    display: block;
+
+                    // Display relatively to parent
+                    position: relative;
+
+                    // Some spacing
+                    padding: $spacing-normal $spacing-smaller 4px $spacing-smaller;
+
+                    // Text input
+                    >input {
+                        // Smooth transitions
+                        transition: all 0.2s ease-in;
+
+                        // Make it take full width
+                        width: 100%;
+
+                        // Set height
+                        height: $spacing-large;
+
+                        // Some spacing
+                        padding-right: $spacing-largest;
+                        padding-left: $spacing-small;
+
+                        // Make it the element take 100% width only no more
+                        box-sizing: border-box;
+
+                        // Rounded corners
+                        border-radius: 6px;
+
+                        // Add border
+                        border: 2px solid $colorGray;
+
+                        // No outline
+                        outline: none;
+
+                        // Set text color and weight
+                        color: rgba($colorDark, 0.6);
+                        font-weight: 600;
+
+                        // On hover/focus
+                        &:hover,
+                        &:focus {
+                            // Give it a drop shadow
+                            box-shadow: 0px 0px $spacing-smaller $colorLightBlue;
+
+                            // Add border
+                            border: 2px solid $colorLightBlue;
+                        }
+
+                    }
+
+                    // Send button
+                    >button {
+                        // Make it display absolute inside parent element
+                        position: absolute;
+
+                        // Right align it
+                        right: $spacing-normal;
+
+                        // Some top spacing
+                        top: $spacing-normal + $spacing-smaller;
+
+                        // Invisible background
+                        background-color: transparent;
+
+                        // Remove border
+                        border: none;
+                    }
+
+                }
+
+                // When we want it to not be visible
+                &.hidden {
+                    visibility: collapse;
+                    display: none;
+                    height: 0px;
+                    padding: 0px !important;
+                }
+            }
+
+
+        }
+    }
+
+
+}

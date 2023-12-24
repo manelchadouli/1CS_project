@@ -1,0 +1,142 @@
+<!--@ include header @-->
+<div class="consulterLesThemes">
+    <h1>Page de consulation des themes</h1><br>
+
+
+    <select name="sortOption">
+            <option value="NONE">Rien</option>
+            <option value="DATE">Date</option>
+            <option value="TITL">Titre</option>
+            <option value="TEAC">Enseignant</option>
+            <option value="KEYS">Mots CLes</option>
+    </select>
+
+    <input type="text" placeholder="Rechercher">
+    <button>ajouter un theme</button>
+
+    <div>
+        <div class="refuser">
+            <p>Titre afjam lmj mlmlskjq mlqsj mlq jd    mls dkj ml djs  mdl j dm    ljk d   mlkj dmqsj m dj mlakj mlaskdjf mlakjd fmlajkf maljkf mlajdfmlajdf Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div class="pasEncore">
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div class="valider">
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div>
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div>
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div>
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div>
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div>
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div>
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div>
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div>
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div>
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div>
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div>
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div>
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div>
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+        <div>
+            <p>Titre Complet</p>
+            <p>1cs tc</p>
+            <p>31 Dec 2015</p>
+            <p>web client-server</p>
+            <p>mohammed, ben snane et ahmedt</p>
+        </div>
+
+
+    </div>
+</div>
+
+<!--@ include footer @-->

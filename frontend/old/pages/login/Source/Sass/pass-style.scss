@@ -1,0 +1,140 @@
+@import "../../../shared/Sass/base";
+
+
+* {
+
+	box-sizing: border-box;
+
+}
+
+body {
+		background: $colorLight;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		font-family: 'Poppins', sans-serif;
+		height: 100vh;
+		
+	}
+
+
+.header img{
+	position: absolute;
+	left: 90%;  
+	height: 10%;
+	top: 10%;
+}
+.container{
+
+	padding: $spacing-smaller $spacing-smaller;
+	background-color: $colorLight;
+	width: $spacing-largest*5;
+	position: relative;
+	top: 0%;
+	
+
+}
+
+h1{
+	font-weight: bold;
+	margin: $spacing-large;
+	font-size: $font-large;
+	
+}
+span{ 
+	padding-top: 10px;
+	color: #B1B2B2;
+	top: 120px;
+	font-weight: regular;
+	font-size: $spacing-smaller;
+	line-height: 20px;
+	}
+	.container form{
+	margin: 3px 2px;
+}
+.container form .error-text{
+	background: #f8d7da;
+	padding: 15px 0;
+	border-radius: 5px;
+	color: #8b3e46;
+	border: 1px solid  #f8d7da;
+	display: none;
+
+}
+
+.p{
+	font-weight:500 ;
+	left:0;
+	margin: 0;
+}
+
+
+.container form .field{
+	width: 100%;
+	height: 45px;
+	display: flex;
+	margin:   20px 0;
+	position: relative ;
+	background-color: $colorLight;
+}
+input {
+		background-color: $colorLightGray;
+		border: none;
+		padding: $spacing-small;
+		margin: $spacing-smaller 0;
+		width: 100%;
+		border-radius: 5px;
+		height: 100%;
+	
+}
+form .field .SHOW{
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform:translateY(-50%) ;
+	font-size: 14px;
+	font-weight: 600;
+	user-select: none;
+	cursor: pointer;
+	display: none;
+}
+form button{    
+	border-radius: $spacing-smaller;
+	background-color: $colorBlue;
+	color: $colorLight;
+	font-size: $font-normal;
+	font-weight: 600;
+	padding: $spacing-small $spacing-largest*1.5;
+	text-transform: uppercase;
+	transition: 0.2s ease-in; 
+	width: 100%;
+	height: 45px;
+	margin: 3px 0 10px 0;
+	text-align: center;
+
+&:hover{
+	background-color: $colorLightBlue;
+}
+}
+
+
+.v45_20 img{
+	width: 2%;
+	position: absolute;
+	top: 611px;
+	left: 20px;
+
+}
+.v45_21 {
+	width: 220px;
+	position: absolute;
+	top: 600px;
+	left: 50px;
+	font-family: Poppins;
+	font-weight: Regular;
+	font-size: $font-normal;
+	opacity: 1;
+	text-align: left;
+	color:$colorDark;
+}

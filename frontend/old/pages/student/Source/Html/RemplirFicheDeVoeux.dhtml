@@ -1,0 +1,50 @@
+<!--@ include header @-->
+
+<div class="fiche">
+    <h1>Fiche de voeux</h1>   
+    <div class="choix">
+        <h2>Mes choix</h2>
+            <div>
+                <div>Titre du theme, qui va etre long <span><i></i><i></i></span><button>--</button></div>
+                <div>Titre du theme, qui va etre long <span><i></i><i></i></span><button>--</button></div>
+                <div>Titre du theme, qui va etre long <span><i></i><i></i></span><button>--</button></div>
+                <div>Titre du theme, qui va etre long h1 h1 h1 h1 h1 1h 1h1 h1 h1 1h 1h 1h1h 1h 11h hh1 h1h1 1h1 1 h1h1 h11 h1 1h1h <span><i></i><i></i></span><button>--</button></div>
+                <div>Titre du theme, qui va etre long <span><i></i><i></i></span><button>--</button></div>
+            </div>
+    </div>
+
+    <div class="themes">
+        <span>
+            <h2>Themes existant</h2><button>envoyer</button>
+        </span>
+        <div>
+            <div><span>Titre du theme, qui va etre long</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre long</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre loafjadmlfjd amldk jfmlkaj fdmalkjf damlkjf alkjf malkjf ng</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre long</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre long</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre long</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre long</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre long</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre long</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre long</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre long</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre long</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre loafjadmlfjd amldk jfmlkaj fdmalkjf damlkjf alkjf malkjf ng</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre loafjadmlfjd amldk jfmlkaj fdmalkjf damlkjf alkjf malkjf ng</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre loafjadmlfjd amldk jfmlkaj fdmalkjf damlkjf alkjf malkjf ng</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre loafjadmlfjd amldk jfmlkaj fdmalkjf damlkjf alkjf malkjf ng</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre loafjadmlfjd amldk jfmlkaj fdmalkjf damlkjf alkjf malkjf ng</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre loafjadmlfjd amldk jfmlkaj fdmalkjf damlkjf alkjf malkjf ng</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre loafjadmlfjd amldk jfmlkaj fdmalkjf damlkjf alkjf malkjf ng</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre loafjadmlfjd amldk jfmlkaj fdmalkjf damlkjf alkjf malkjf ng</span><button>ajouter</button></div>
+            <div><span>Titre du theme, qui va etre loafjadmlfjd amldk jfmlkaj fdmalkjf damlkjf alkjf malkjf ng</span><button>ajouter</button></div>
+            <div><span>Titre dumadf amlkjf amlkjad mflkaj fmlakj fmlakj flmdaj flmakj lmakj fmlkajds lfksjamlfdjalm fjadlk jfamlj falkf jamljfk aldjk almf a theme, qui va etre long</span><button>ajouter</button></div>
+        </div>
+    
+    </div>
+
+
+</div>
+
+<!--@ include footer @-->

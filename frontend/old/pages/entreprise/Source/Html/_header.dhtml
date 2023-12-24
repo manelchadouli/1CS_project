@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <title>Title</title>
+        <link href="./Assets/Css/style.css" rel="stylesheet" type="text/css" />
+        <link href="./Assets/Css/top-bar.css" rel="stylesheet" type="text/css" />
+        <link href="./Assets/Css/popup.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="Assets/Js/base.js"></script>
+        <script type="text/javascript" src="Assets/Js/popup.js"></script>
+        <script type="text/javascript" src="Assets/Js/loadData.js"></script>
+        <script src="https://kit.fontawesome.com/9c22241202.js" crossorigin="anonymous"></script>
+    </head>
+    <nav class="top-bar">
+        <ul>
+            <li><svg width="612" height="626" viewBox="0 0 612 626" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.5"><path d="M214.628 102.207C229.273 95.2566 244.744 89.9141 260.608 86.5792C375.742 62.3761 439.364 85.3837 476.492 115.071C521.016 150.673 545.831 211.498 544.482 268.49C542.067 370.52 476.85 464.835 374.559 499.421C243.762 543.646 101.879 473.465 57.6546 342.668C41.5564 295.057 9.30042 199.659 214.628 102.207Z" fill="url(#paint0_linear_37_3)" style="mix-blend-mode:darken"/></g><g opacity="0.7"><path d="M188.599 404.757C84.4385 314.125 15.754 222.547 45.2929 188.599C135.926 84.4386 293.836 73.4723 397.997 164.105C502.157 254.738 513.123 412.649 422.491 516.809C387.7 556.792 292.759 495.39 188.599 404.757Z" fill="url(#paint1_linear_37_3)" style="mix-blend-mode:darken"/></g><path opacity="0.7" d="M156.689 239.483C213.955 113.848 282.217 21.9542 323.164 40.6182C448.799 97.8842 504.224 246.155 446.958 371.791C389.692 497.426 241.421 552.85 115.785 495.584C67.5589 473.602 99.4232 365.118 156.689 239.483Z" fill="url(#paint2_linear_37_3)"/><path d="M196.883 24.5309C207.527 35.3819 202.113 53.3149 187.812 58.4633C172.694 63.9053 151.825 59.9726 143.178 46.4308C142.784 45.8141 142.429 45.1718 142.112 44.4947C137.07 33.7163 144.288 20.8173 153.653 13.4759C156.965 10.8791 160.078 9.58034 164.442 9.2488C176.148 8.35944 188.661 16.1497 196.883 24.5309Z" fill="#4FF1FE"/><path d="M213.014 166.31C213.014 166.31 209.3 165.613 325.013 166.31C440.727 167.007 447.069 327.485 325.013 326.81C202.958 326.134 275.013 326.81 275.013 326.81V446.31C235.52 434.678 213.014 421.81 213.013 387.31C213.013 352.81 213.013 265.81 213.013 265.81C213.013 265.81 302.35 265.775 331.513 265.81C360.677 265.845 361.106 226.346 331.513 226.31C301.921 226.274 289.514 226.31 272.014 226.31C254.513 226.31 217.712 201.989 213.014 166.31Z" fill="#FEFEFE"/><ellipse opacity="0.8" cx="292.5" cy="605" rx="176.5" ry="21" fill="url(#paint3_radial_37_3)"/><defs><linearGradient id="paint0_linear_37_3" x1="68.8652" y1="375.824" x2="542.523" y2="215.673" gradientUnits="userSpaceOnUse"><stop stop-color="#A647F1"/><stop offset="1" stop-color="#6AA6FF"/></linearGradient><linearGradient id="paint1_linear_37_3" x1="293" y1="284" x2="52" y2="84" gradientUnits="userSpaceOnUse"><stop stop-color="#4FF1FE"/><stop offset="1" stop-color="#B9FBFF"/></linearGradient><linearGradient id="paint2_linear_37_3" x1="198.134" y1="533.12" x2="405.513" y2="78.1537" gradientUnits="userSpaceOnUse"><stop stop-color="#4FF1FE"/><stop offset="1" stop-color="#96AAFF"/></linearGradient><radialGradient id="paint3_radial_37_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(292.5 605) rotate(90) scale(21 176.5)"><stop stop-color="#C2BABA"/><stop offset="1" stop-color="#CBBFBF" stop-opacity="0"/></radialGradient></defs></svg></li>
+            <!-- This div is used to make a separator between the logo and the page links -->
+            <li><div></div></li>
+            <li>
+                <select name="year">
+                    <option value="year-1">1 ere annee</option>
+                    <option value="year-2">2 eme annee</option>
+                    <option value="year-3">3 eme annee</option>
+                    <option value="year-4">4 eme annee</option>
+                    <option value="year-5">5 eme annee</option>
+                </select>
+            </li><li><a href="/validateThemes">Themes</a></li>
+            <li><a href="/projects">Projets</a></li>
+            <li><a href="/soutenance">Soutenance</a></li>
+            <li>
+                <select>
+                    <option value="etudiant">etudiant</option>
+                    <option value="enseignant">enseignant</option>
+                    <option value="entreprise">entreprise</option>
+                </select>
+            </li>
+            <li><button class="butto">Deconnexion</button></li>
+
+        </ul>
+    </nav>
+
+
+     <!-- The popup that will contain different things depending on the page, and use -->
+ <div class="popup-container">
+    <!-- The content of the popup will be inside this div -->
+     <div>
+
+         <button class="close">close popup</button>
+
+         <span class="block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima suscipit consequuntur 
+             amet aliquam repellat dignissimos ex, ducimus, quasi molestias ut soluta praesentium magni ipsam dicta
+              atque cum quos quaerat. Placeat!</span>
+         <span class="block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni nostrum facilis aut aspernatur cumque. 
+             Voluptates, magnam libero! Fugiat 
+             esse voluptates aliquid voluptatem, possimus, ut quibusdam error corrupti consequuntur tempore eum debitis maxime. Similique 
+             iure porro unde! Accusantium, ullam odit. Eaque, a suscipit. Provident, accusamus sunt vitae minus est doloremque rerum?</span>
+         <span class="block">the text here is for test</span>
+         <span class="block">the text here is for test</span>
+         <span class="block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nobis asperiores ea facilis voluptatem modi sunt cum. Similique, delectus quasi! Non, eaque! A hic similique facilis veniam error, et pariatur laboriosam id repellat maiores iste aliquam aliquid, enim neque, ea alias fuga adipisci quibusdam delectus? Voluptatem nulla ipsum laboriosam consequatur. Saepe facere illum tenetur sit dolores explicabo natus atque doloremque, rem quos vel. Nostrum dolores voluptatum beatae rerum repudiandae, quos id est, sunt ipsam nobis ullam voluptatibus dolorem, maiores deserunt? Autem praesentium tempora minima libero id suscipit totam impedit qui quibusdam ea nulla, cum, veniam repellendus, hic reiciendis! Optio, sed.</span>
+         <span class="block">Lorem ipsum dolor et consectetur adipisicing elit. Esse nobis asperiores ea facilis voluptatem modi sunt cum. Similique, delectus quasi! Non, eaque! A hic similique facilis veniam error, et pariatur laboriosam id repellat maiores iste aliquam aliquid, enim neque, ea alias fuga adipisci quibusdam delectus? Voluptatem nulla ipsum laboriosam consequatur. Saepe facere illum tenetur sit dolores explicabo natus atque doloremque, rem quos vel. Nostrum dolores voluptatum beatae rerum repudiandae, quos id est, sunt ipsam nobis ullam voluptatibus dolorem, maiores deserunt? Autem praesentium tempora minima libero id suscipit totam impedit qui quibusdam ea nulla, cum, veniam repellendus, hic reiciendis! Optio, sed.</span>
+         <span class="block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nobis asperiores ea facilis voluptatem modi sunt cum. Similique, delectus quasi! Non, eaque! A hic similique facilis veniam error, et pariatur laboriosam id repellat maiores iste aliquam aliquid, enim neque, ea alias fuga adipisci quibusdam delectus? Voluptatem nulla ipsum laboriosam consequatur. Saepe facere illum tenetur sit dolores explicabo natus atque doloremque, rem quos vel. Nostrum dolores voluptatum beatae rerum repudiandae, quos id est, sunt ipsam nobis ullam voluptatibus dolorem, maiores deserunt? Autem praesentium tempora minima libero id suscipit totam impedit qui quibusdam ea nulla, cum, veniam repellendus, hic reiciendis! Optio, sed.</span>
+     </div>
+ 
+ </div>
+    
+
+
+
+    <body>

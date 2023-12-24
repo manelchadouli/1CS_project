@@ -1,0 +1,185 @@
+@import "../../../shared/Sass/base";
+
+// The whole page
+.consulterUnTheme {
+
+    // Give it some padding
+    padding: $spacing-larger;
+    padding-bottom: $spacing-largest*2;
+
+    // The title of the theme 
+    >h1 {
+
+        // Make it centered
+        justify-self: center;
+
+        // Give it a big font size
+        font-size: $spacing-larger;
+    }
+
+    // Each child in this page
+    >div {
+
+        // Give it some padding
+        padding: $spacing-smaller;
+
+        // Give it some margin
+        margin: $spacing-normal;
+
+        // The title of the element
+        >h2 {
+            // Give it an average font size
+            font-size: $spacing-normal;
+
+            // Give it some space in the bottom
+            margin-bottom: $spacing-smaller;
+
+            text-shadow: 0px 5px $spacing-smaller $colorGray;
+        }
+
+        // The content of the element
+        >p {
+
+            // Border around the content
+            border: 1px solid $colorGray;
+
+            // Border radius
+            border-radius: $spacing-small;
+
+            // Some padding
+            padding: $spacing-normal;
+
+            // Average font size
+            font-size: $spacing-normal;
+
+            // Box shadow
+            box-shadow: 0px 0px $spacing-small $colorGray;
+        }
+
+        // Smooth animaions
+        * {
+            transition: 0.2s ease-in;
+        }
+
+        // When we hover over the whole element or it's focused
+        &:hover,
+        &:focus {
+
+            // The title of the element
+            >h2 {
+                // Give it a light blue color
+                color: $colorLightBlue;
+
+                // Change the color of the text shadow
+                text-shadow: 0px 5px $spacing-smaller $colorLightBlue;
+            }
+
+            // The text of the element
+            >p {
+                // Change the box shadow
+                box-shadow: 0px 0px $spacing-small $colorLightBlue;
+
+                // Change the color of the border
+                border: 1px solid $colorLightGray;
+            }
+        }
+    }
+
+    // The style of the button in the last element
+    *:nth-child(10) {
+        // Make the content align to the right
+        text-align: right;
+        padding-right: 0px;
+
+        >button {
+
+            // Set forground color
+            color: $colorOrange;
+
+            // Give it a border
+            border: 2px solid $colorOrange;
+
+            // Set the background color
+            background-color: $colorLight;
+
+            // Give it some spacing
+            padding: $spacing-small $spacing-normal;
+
+            // Give it a border radius
+            border-radius: $spacing-small;
+
+            // On hover and focus
+            &:hover,
+            &:focus {
+
+                // Give the button a box shadow
+                box-shadow: 0px 0px $spacing-small $colorOrange;
+
+                // Give the text some shadow
+                text-shadow: 0px 0px $spacing-smaller $colorOrange;
+
+                // Make the cursor a hand, indicating it's a clickable thing
+                cursor: pointer;
+            }
+
+
+        }
+    }
+
+    // Display grid for the whole page
+    display:grid;
+
+    // Give it two rows
+    grid-template-columns: 1fr 1fr;
+
+    // specify the layout of the elements of the page
+    grid-template-areas: "area-1 area-1"
+    "area-2 area-2"
+    "area-3 area-4"
+    "area-5 area-5"
+    "area-6 area-6"
+    "area-7 area-8"
+    "area-9 ."
+    ". area-10";
+
+    // Set the area of each element in the page
+    >:nth-child(1) {
+        grid-area: area-1;
+    }
+
+    >:nth-child(2) {
+        grid-area: area-2;
+    }
+
+    >:nth-child(3) {
+        grid-area: area-3;
+    }
+
+    >:nth-child(4) {
+        grid-area: area-4;
+    }
+
+    >:nth-child(5) {
+        grid-area: area-5;
+    }
+
+    >:nth-child(6) {
+        grid-area: area-6;
+    }
+
+    >:nth-child(7) {
+        grid-area: area-7;
+    }
+
+    >:nth-child(8) {
+        grid-area: area-8;
+    }
+
+    >:nth-child(9) {
+        grid-area: area-9;
+    }
+
+    >:nth-child(10) {
+        grid-area: area-10;
+    }
+}

@@ -1,0 +1,157 @@
+@import "../../../shared/Sass/base";
+
+
+
+// The top part of the page
+nav {
+	text-align: right;
+
+	>ul {
+		// Make the list items display horizontally
+		display: flex;
+
+		li {
+			// Remove the default style
+			list-style-type: none;
+
+			margin-right: $spacing-largest *1.5;
+
+			* {
+				// Display block so the top and bottom margin and padding work
+				display: block;
+			}
+
+			// Style the links to different pages
+			a {
+				font-size: large;
+				text-decoration: none;
+				color: $colorDark;
+
+				// Give it a padding and a margin
+				margin: $spacing-normal;
+
+				// Animation properties
+				transition: ease-in 200ms;
+
+				// Set the hover style
+				&:hover {
+					color: $colorLightBlue;
+				}
+			}
+
+			// Style the login button
+			button {
+				// Animation properties
+				transition: ease-in 200ms;
+
+				// Button properties
+				background-color: $colorLight;
+				border: 2px solid $colorLightBlue;
+				color: $colorLightBlue;
+				padding: $spacing-smaller $spacing-large;
+				margin: $spacing-small 0px;
+				border-radius: $spacing-small;
+
+				// Hover properties
+				&:hover {
+					border: 2px solid $colorOrange;
+					color: $colorOrange;
+					cursor: pointer;
+				}
+
+			}
+		}
+
+		>*:last-child {
+			margin-right: $spacing-large;
+		}
+
+		// The logo style
+		>li {
+			>img {
+				height: $spacing-large;
+				width: auto;
+				padding: $spacing-small;
+
+				&:hover {
+
+					//         name        duration persistent delay
+					animation: animate-logo 3s infinite 0s;
+
+				}
+			}
+		}
+
+		// Right alin the stuff
+		*:nth-child(2) {
+			text-align: right;
+			margin-left: auto;
+		}
+
+	}
+}
+
+// Page styles
+.mainPage {
+
+	div {
+		max-width: $spacing-largest * 13;
+		display: grid;
+		grid-template-columns: 5fr 2fr;
+		height: 70vh;
+		margin-left: auto;
+		margin-right: auto;
+
+		margin-top: $spacing-largest+$spacing-normal;
+
+		>p {
+			display: inline;
+			max-width: $spacing-largest *5;
+			text-align: center;
+			font-size: $font-largest;
+			padding: $spacing-large;
+			margin-left: $spacing-normal;
+
+			line-height: 1.2;
+		}
+
+		>img {
+			width: 6* $spacing-largest;
+			height: auto;
+		}
+
+	}
+
+}
+
+* {
+	font-weight: 600;
+}
+
+// Animate the logo
+@keyframes animate-logo {
+	25% {
+		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+
+	}
+
+	75% {
+		transform: rotate(270deg);
+		-webkit-transform: rotate(270deg);
+
+	}
+
+	100% {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+
+
+	}
+
+}

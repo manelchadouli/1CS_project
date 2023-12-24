@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <title>Title</title>
+        <link href="./Assets/Css/email-style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="header">
+         <img src="C:\Users\dell\Desktop\project1\S2_PFE_project\frontend\pages\shared\images\logo2.png" alt="this logo ">
+        </div>
+        <div class="content">
+           <h1>Réinitialiser le mot de passe</h1>
+           <span>si vous avez perdu votre mot de passe ou souhaitez le réinitialiser,</span><br>
+           <span>veuillez entrer votre email ci-dessous pour commencer</span>
+           <p>Email</p>
+           <form action="#">
+               <input id="email" type="text" placeholder="entrez votre adresse email">
+               <div class="error-text">
+                  entrez un valide adress email
+               </div>
+               <button>soumettre</button>
+            </form>
+        </div>
+
+        <div class="v45_20"><a href="login.html"><img src="C:\Users\dell\Desktop\project1\S2_PFE_project\frontend\pages\shared\images\arrow.png" alt="click here to get back to login_page"></a></div>
+        <span class="v45_21">retour à connextion</span>
+        <div class="v45_22"><img src="C:\Users\dell\Desktop\project1\S2_PFE_project\frontend\pages\shared\images\undraw.svg" alt="forgot your password" width="300px" height="150px"></div>
+
+
+<!--@ include footer @-->

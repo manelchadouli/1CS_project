@@ -1,0 +1,39 @@
+@import "./base.spacing";
+@import "./base.sizing";
+@import "./base.palette";
+
+// Default properties for the whole website
+html {
+    // Default background color 
+    background-color: $colorLight;
+
+    // Default foreground color
+    color: $colorDark;
+}
+
+* {
+    // Remove all the default margins and padding added by the browser
+    margin: 0px;
+    padding: 0px;
+
+    // Give a default font 
+    font-family: 'Poppins', sans-serif;
+
+    // Give a default font size
+    font-size: $font-normal;
+
+}
+
+
+// Default link style
+a {
+    transition: ease-in 200ms;
+    color: $colorOrange;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $colorLightBlue;
+    }
+
+}

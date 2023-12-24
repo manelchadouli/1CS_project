@@ -1,0 +1,230 @@
+<!--@ include header @-->
+
+<div class="pageAffecterLesThemes">
+    <h1>page de l'affectation des themes</h1>   
+    <div>
+        <button>Remplir Automatiquement</button>
+        <button>Par note equipe</button>
+        <button>Par note chef d'equipe</button>
+    </div>
+    <div class="themesList">
+        <div>
+            <span>Le titre du premier theme dans la liste des themes</span><button>réinitialiser</button><i></i>
+            <div class="hidden">
+                <div>
+                    <span>1</span>
+                    <span>le nom du chef de la premier equipe</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>1</span>
+                    <span>2nd equipe</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>2</span>
+                    <span>equipe numero three</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>2</span>
+                    <span>2nd equipe four of all</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>3</span>
+                    <span>2nd equipe fifth hha</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>4</span>
+                    <span>2nd equipe</span>
+                    <button>+</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span>Le titre du premier theme dans la liste des themes</span><button>réinitialiser</button><i></i>
+            <div>
+                <div>
+                    <span>1</span>
+                    <span>le nom du chef de la premier equipe</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>1</span>
+                    <span>2nd equipe</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>2</span>
+                    <span>equipe numero three</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>2</span>
+                    <span>2nd equipe four of all</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>3</span>
+                    <span>2nd equipe fifth hha</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>4</span>
+                    <span>2nd equipe</span>
+                    <button>+</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span>Le titre du premier theme dans la liste des themes</span><button>réinitialiser</button><i></i>
+            <div>
+                <div>
+                    <span>1</span>
+                    <span>le nom du chef de la premier equipe</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>1</span>
+                    <span>2nd equipe</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>2</span>
+                    <span>equipe numero three</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>2</span>
+                    <span>2nd equipe four of all</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>3</span>
+                    <span>2nd equipe fifth hha</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>4</span>
+                    <span>2nd equipe</span>
+                    <button>+</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span>Le titre du premier theme dans la liste des themes</span><button>réinitialiser</button><i></i>
+            <div>
+                <div>
+                    <span>1</span>
+                    <span>le nom du chef de la premier equipe</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>1</span>
+                    <span>2nd equipe</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>2</span>
+                    <span>equipe numero three</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>2</span>
+                    <span>2nd equipe four of all</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>3</span>
+                    <span>2nd equipe fifth hha</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>4</span>
+                    <span>2nd equipe</span>
+                    <button>+</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span>Le titre du premier theme dans la liste des themes</span><button>réinitialiser</button><i></i>
+            <div>
+                <div>
+                    <span>1</span>
+                    <span>le nom du chef de la premier equipe</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>1</span>
+                    <span>2nd equipe</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>2</span>
+                    <span>equipe numero three</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>2</span>
+                    <span>2nd equipe four of all</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>3</span>
+                    <span>2nd equipe fifth hha</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>4</span>
+                    <span>2nd equipe</span>
+                    <button>+</button>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <span>Le titre du premier theme dans la liste des themes</span><button>réinitialiser</button><i></i>
+            <div>
+                <div>
+                    <span>1</span>
+                    <span>le nom du chef de la premier equipe</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>1</span>
+                    <span>2nd equipe</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>2</span>
+                    <span>equipe numero three</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>2</span>
+                    <span>2nd equipe four of all</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>3</span>
+                    <span>2nd equipe fifth hha</span>
+                    <button>+</button>
+                </div>
+                <div>
+                    <span>4</span>
+                    <span>2nd equipe</span>
+                    <button>+</button>
+                </div>
+            </div>
+        </div>
+        
+    
+    </div>
+
+        
+
+</div>
+
+<!--@ include footer @-->

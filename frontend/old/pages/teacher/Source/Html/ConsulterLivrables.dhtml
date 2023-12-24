@@ -1,0 +1,85 @@
+<!--@ include header @-->
+<div class="consulterLivrables">
+    <div class="header">
+        <button>autoriser</button>
+    </div>
+    <div class="content">
+        <div>
+            <span>Titre du livrable</span>
+            <span>nom du createur</span>
+            <span>
+                <i></i>
+                <img src="../../../../../vue-app/src/assets/icons/down-arrow.svg" alt="download" width="13px" height="13px">
+            </span>
+            <div class="">
+                <p>le premier commentaire dans cette page</p>
+                <p>second commentaire dans cette page</p>
+                <p>le third commentaire dans cette page</p>
+            <span><input type="text" placeholder="Ajouter un nouveau commentaire"><button><img src="./../../../../vue-app/src/assets/icons/down-arrow.svg" alt="assjouter"/></button></span>
+            </div>
+        </div>
+        <div>
+            <span>Titre du livrable</span>
+            <span>nom du createur</span>
+            <span>
+                <i></i>
+                <img src="../../../../../vue-app/src/assets/icons/down-arrow.svg" alt="download" width="13px" height="13px">
+            </span>
+            <div class="">
+                <p>le premier commentaire dans cette page</p>
+                <p>second commentaire dans cette page</p>
+                <p>le third commentaire dans cette page</p>
+            <span><input type="text" placeholder="Ajouter un nouveau commentaire"><button><img src="./../../../../vue-app/src/assets/icons/down-arrow.svg" alt="assjouter"/></button></span>
+            </div>
+        </div>
+       
+        <div>
+            <span>Titre du livrable</span>
+            <span>nom du createur</span>
+            <span>
+                <i></i>
+                <img src="../../../../../vue-app/src/assets/icons/down-arrow.svg" alt="download" width="13px" height="13px">
+            </span>
+            <div class="">
+                <p>le premier commentaire dans cette page</p>
+                <p>second commentaire dans cette page</p>
+                <p>le third commentaire dans cette page</p>
+            <span><input type="text" placeholder="Ajouter un nouveau commentaire"><button><img src="./../../../../vue-app/src/assets/icons/down-arrow.svg" alt="assjouter"/></button></span>
+            </div>
+        </div>
+       
+        <div>
+            <span>Titre du livrable</span>
+            <span>nom du createur</span>
+            <span>
+                <i></i>
+                <img src="../../../../../vue-app/src/assets/icons/down-arrow.svg" alt="download" width="13px" height="13px">
+            </span>
+            <div class="">
+                <p>le premier commentaire dans cette page</p>
+                <p>second commentaire dans cette page</p>
+                <p>le third commentaire dans cette page</p>
+            <span><input type="text" placeholder="Ajouter un nouveau commentaire"><button><img src="./../../../../vue-app/src/assets/icons/down-arrow.svg" alt="assjouter"/></button></span>
+            </div>
+        </div>
+       
+        <div>
+            <span>Titre du livrable</span>
+            <span>nom du createur</span>
+            <span>
+                <i></i>
+                <img src="../../../../../vue-app/src/assets/icons/down-arrow.svg" alt="download" width="13px" height="13px">
+            </span>
+            <div class="">
+                <p>le premier commentaire dans cette page</p>
+                <p>second commentaire dans cette page</p>
+                <p>le third commentaire dans cette page</p>
+            <span><input type="text" placeholder="Ajouter un nouveau commentaire"><button><img src="./../../../../vue-app/src/assets/icons/down-arrow.svg" alt="assjouter"/></button></span>
+            </div>
+        </div>
+       
+    </div>
+
+</div>  
+
+<!--@ include footer @-->

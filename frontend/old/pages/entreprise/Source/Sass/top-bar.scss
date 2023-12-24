@@ -1,0 +1,126 @@
+@import "../../../shared/Sass/base";
+
+// Top bar styles
+.top-bar{
+
+	// The bottom line with a drop shadow
+	box-shadow: 0px 0px $spacing-smaller 0px $colorDark;
+	
+	ul {
+		// Make the list items display horizontally
+		display: flex;
+		width: 100%;
+		
+		align-content: space-between;
+		li{
+			// Remove the default style
+			list-style-type: none;
+		
+			*{
+				// Display block so the top and bottom margin and padding work
+				display: block;
+			}
+
+			// Style the links to different pages
+			a{
+				font-size: large;
+				text-decoration: none;
+				color: $colorDark;
+
+				// Give it a padding and a margin
+				margin: $spacing-normal;
+
+				// Animation properties
+				transition: ease-in 200ms;
+
+				// Set the hover style
+				&:hover{
+					color: $colorLightBlue;
+				}
+			}	
+	
+			// Style the drop menu 
+			select{
+				background-color: $colorLight;
+				border: none;
+				margin: $spacing-normal;
+						
+			}
+
+			// Style the logout button
+			button{
+				// Animation properties
+				transition: ease-in 200ms;
+
+				// Button properties
+				background-color: $colorLight;
+				border: 2px solid $colorLightBlue;
+				color: $colorLightBlue;
+				padding: $spacing-smaller $spacing-large;
+				margin: $spacing-small $spacing-normal;
+				border-radius: $spacing-small;
+				
+				// Hover properties
+				&:hover{
+					// Animate the button on hover
+					//         name        duration persistent delay
+					animation: neon-border 0.3s     forwards   0.5s, color-text 0.2s forwards;
+				}
+
+			}
+		}	
+		
+		li{
+			svg{
+				height: $spacing-large;
+				width: auto;
+				padding: $spacing-small;
+			}
+		}
+
+		// Right align the select boxes and logout button
+		:nth-child(7){			
+			text-align: right;
+			margin-left: auto;
+		}
+		
+		// The line between the logo and the other links
+		li:nth-child(2){
+			width: 3px;
+			background-color: $colorDark;
+			margin: $spacing-normal;
+			opacity: 20%;
+		}
+	}
+}
+
+
+
+
+// Animate the border of the button and give it a glow
+@keyframes neon-border{
+
+	100%{
+		border: 2px solid $colorOrange;
+		box-shadow: 0px 0px $spacing-small $colorOrange;
+	}
+}
+
+
+// Animate the text of the button
+@keyframes color-text{
+	
+	100%{
+		color: $colorOrange;
+	}
+
+}
+
+
+
+
+
+
+
+
+

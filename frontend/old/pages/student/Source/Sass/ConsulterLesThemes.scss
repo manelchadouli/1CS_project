@@ -1,0 +1,419 @@
+@import "../../../shared/Sass/base";
+
+.consulterLesThemes {
+
+    // Give it some padding
+    padding: $spacing-large 0px $spacing-largest*2 0px;
+
+    // The title of the theme 
+    >h1 {
+        // Give it a big font size
+        font-size: $font-largest;
+
+        // Some padding and margin
+        padding: $spacing-normal;
+        margin-left: $spacing-large;
+
+        // Center the title
+        text-align: left;
+
+        display: inline;
+    }
+
+    >select {
+
+        // Make the background white
+        background-color: $colorLight;
+
+        // A gray border
+        border: 2px solid $colorGray;
+
+        // Some spacing
+        padding: $spacing-small;
+        margin-left: $spacing-largest;
+
+        // Smooth out the corners
+        border-radius: $spacing-small;
+
+        // Light gray text color
+        color: $colorGray;
+
+        // Remove style when focused
+        outline-style: none;
+
+        // Set the style when the select gets focused
+        &:focus {
+            box-shadow: 0px 0px 5px 2px $colorLightBlue;
+            border: 1px solid $colorLightBlue;
+        }
+
+    }
+
+    >input {
+
+        // Set the font size
+        font-size: $font-normal;
+
+        // Rounded corners
+        border-radius: $spacing-small;
+
+        // A border around
+        border: 2px solid $colorGray;
+
+        // Black text color
+        color: $colorDark;
+
+        // Make it take available width in the line
+        width: 48%;
+
+        // Some spacing
+        padding: $spacing-small;
+        margin: $spacing-normal $spacing-largest 0px $spacing-largest;
+
+        // Remove style when focused
+        outline-style: none;
+
+        // Set the style when the input gets focused
+        &:focus {
+            box-shadow: 0px 0px 5px 2px $colorLightBlue;
+            border: 1px solid $colorLightBlue;
+        }
+
+    }
+
+    >button {
+
+        // Set forground color
+        color: $colorLightBlue;
+
+        // Give it a border
+        border: 2px solid $colorLightBlue;
+
+        // Set the background color
+        background-color: $colorLight;
+
+        // Give it some spacing
+        padding: $spacing-small $spacing-normal;
+
+        // Give it a border radius
+        border-radius: $spacing-small;
+
+        // On hover and focus
+        &:hover,
+        &:focus {
+
+            // Give the button a box shadow
+            box-shadow: 0px 0px $spacing-small $colorLightBlue;
+
+            // Give the text some shadow
+            text-shadow: 0px 0px $spacing-smaller $colorLightBlue;
+
+            // Make the cursor a hand, indicating it's a clickable thing
+            cursor: pointer;
+        }
+
+
+
+    }
+
+    // The container of the list of themes
+    >div {
+        // Give some spacing
+        margin: $spacing-largest $spacing-largest;
+
+        // Display grid to align the child elements
+        display: grid;
+
+        // Specify that we want the children to be maximum 5 units in width,
+        // add children to the same line until the line is full, then jump to the next line
+        grid-template-columns: repeat(auto-fill, $spacing-largest*5);
+
+        // Make some space between child elements
+        gap: $spacing-large;
+
+        // // Center the elements in the page
+        // justify-content: center;
+
+
+        // The style of each theme
+        >div {
+
+            // A corner radius to smooth out the edges
+            border-radius: $spacing-normal;
+
+            // Light background
+            background-color: $colorLight;
+
+            // Specify the height
+            height: $spacing-largest*3;
+
+            // Give it a border
+            border: 1px solid $colorGray;
+
+            // Make display grid to align children
+            display: grid;
+
+            // Give it two columns
+            grid-template-columns: 1fr 1fr;
+
+            // Specify the layout of the children of the theme
+            grid-template-areas: "area-1 area-1"
+                "area-2 area-3"
+                "area-4 area-4"
+                "area-5 area-5"
+            ;
+
+            // Give it a drop shadow 
+            box-shadow: 0px 0px 8px 3px $colorGray;
+
+            >p {
+
+                // Some spacing
+                padding: $spacing-small;
+
+                // Give it border to separate it from other elements
+                border: 1px solid $colorLightGray;
+
+                // Align the text to the left
+                text-align: left;
+
+                // Make the text take only one line
+                white-space: nowrap;
+
+                // Make the text over flow hidden, and add three dots if it overflows
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+            }
+
+            // Specify which area in the theme is each element
+            >p:nth-child(1) {
+                // Center the text of the title
+                text-align: center;
+
+                // Set background of the title
+                background-color: $colorLightBlue;
+                border: 1px solid $colorLightBlue;
+                color: $colorLight;
+
+                // Give it a border radius in the top
+                border-top-left-radius: $spacing-normal;
+                border-top-right-radius: $spacing-normal;
+                grid-area: area-1;
+            }
+
+            >p:nth-child(2) {
+                grid-area: area-2;
+            }
+
+            >p:nth-child(3) {
+                grid-area: area-3;
+            }
+
+            >p:nth-child(4) {
+                grid-area: area-4;
+            }
+
+            >p:nth-child(5) {
+                grid-area: area-5;
+
+                // Give the last child a border radius in the bottom
+                border-bottom-left-radius: $spacing-normal;
+                border-bottom-right-radius: $spacing-normal;
+            }
+        }
+
+
+        >div.refuser {
+
+
+            &:hover {
+                // Animate the theme on hover
+                //         name        duration persistent delay
+                animation: theme-hover-red 0.4s forwards;
+                cursor: pointer;
+
+                // Animate the child elements in the theme
+                p:nth-child(2) {
+                    animation: theme-element-hover-red 0.3s forwards 0.2s;
+                }
+
+                p:nth-child(3) {
+                    animation: theme-element-hover-red 0.3s forwards 0.4s;
+                }
+
+                p:nth-child(4) {
+                    animation: theme-element-hover-red 0.3s forwards 0.6s;
+                }
+
+                p:nth-child(5) {
+                    animation: theme-element-hover-red 0.3s forwards 0.8s;
+                }
+
+            }
+
+
+            >p:nth-child(1) {
+                // Set background of the title
+                background-color: red;
+                border: 1px solid red;
+                color: $colorLight;
+            }
+        }
+
+        >div.valider {
+
+
+            &:hover {
+                // Animate the theme on hover
+                //         name        duration persistent delay
+                animation: theme-hover-lime 0.4s forwards;
+                cursor: pointer;
+
+                // Animate the child elements in the theme
+                p:nth-child(2) {
+                    animation: theme-element-hover-lime 0.3s forwards 0.2s;
+                }
+
+                p:nth-child(3) {
+                    animation: theme-element-hover-lime 0.3s forwards 0.4s;
+                }
+
+                p:nth-child(4) {
+                    animation: theme-element-hover-lime 0.3s forwards 0.6s;
+                }
+
+                p:nth-child(5) {
+                    animation: theme-element-hover-lime 0.3s forwards 0.8s;
+                }
+
+            }
+
+
+            >p:nth-child(1) {
+                // Set background of the title
+                background-color: lime;
+                border: 1px solid lime;
+                color: $colorLight;
+            }
+        }
+
+
+
+        >div.pasEncore {
+
+
+            &:hover {
+                // Animate the theme on hover
+                //         name        duration persistent delay
+                animation: theme-hover 0.4s forwards;
+                cursor: pointer;
+
+                // Animate the child elements in the theme
+                p:nth-child(2) {
+                    animation: theme-element-hover 0.3s forwards 0.2s;
+                }
+
+                p:nth-child(3) {
+                    animation: theme-element-hover 0.3s forwards 0.4s;
+                }
+
+                p:nth-child(4) {
+                    animation: theme-element-hover 0.3s forwards 0.6s;
+                }
+
+                p:nth-child(5) {
+                    animation: theme-element-hover 0.3s forwards 0.8s;
+                }
+
+            }
+
+
+            >p:nth-child(1) {
+                // Set background of the title
+                background-color: $colorLightBlue;
+                border: 1px solid $colorLightBlue;
+                color: $colorLight;
+            }
+        }
+
+
+
+    }
+
+
+}
+
+
+
+// Animate the theme on hover
+@keyframes theme-hover {
+
+    100% {
+        box-shadow: 0px 0px 10px 2px $colorLightBlue;
+        border: 1px solid $colorLightBlue;
+
+    }
+}
+
+// Animate the elements inside the theme on hover
+@keyframes theme-element-hover {
+    0% {
+        border: none;
+    }
+
+    100% {
+        color: $colorLightBlue;
+        border: none;
+    }
+}
+
+
+
+
+// Animate the theme on hover
+@keyframes theme-hover-red {
+
+    100% {
+        box-shadow: 0px 0px 10px 2px red;
+        border: 1px solid red;
+
+    }
+}
+
+// Animate the elements inside the theme on hover
+@keyframes theme-element-hover-red {
+    0% {
+        border: none;
+    }
+
+    100% {
+        color: red;
+        border: none;
+    }
+}
+
+
+
+
+// Animate the theme on hover
+@keyframes theme-hover-lime {
+
+    100% {
+        box-shadow: 0px 0px 10px 2px lime;
+        border: 1px solid lime;
+
+    }
+}
+
+// Animate the elements inside the theme on hover
+@keyframes theme-element-hover-lime {
+    0% {
+        border: none;
+    }
+
+    100% {
+        color: lime;
+        border: none;
+    }
+}

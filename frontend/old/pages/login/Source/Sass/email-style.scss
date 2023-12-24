@@ -1,0 +1,142 @@
+@import "../../../shared/Sass/base";
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+	background: $colorLight;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Poppins', sans-serif;
+	height: 100vh;
+	
+}
+.header img{
+	position: absolute;
+	left: 90%;  
+	height: 10%;
+    top: 10%;
+}
+
+h1 {
+	font-weight: bold;
+	margin: $spacing-large;
+	font-size: $font-larger;
+    text-align: center;
+    top: 1%;
+    
+
+}
+span {
+	font-size: $font-small;
+    color: #6d6e6e;
+    margin   :  $spacing-small $spacing-small $spacing-large $spacing-largest*2.5;
+	
+	
+}
+p{
+	font-weight:500 ;
+   left: 0;
+	margin: $spacing-small $spacing-smaller*25 $spacing-large $spacing-largest*3;
+	
+	
+}
+button {
+	border-radius: $spacing-smaller;
+	background-color: $colorBlue;
+	color: $colorLight;
+	font-size: $font-normal;
+	font-weight: 600;
+	padding: $spacing-small $spacing-larger;
+	text-transform: uppercase;
+	transition: 0.2s ease-in;  
+    width: 100%;
+	
+	&:hover{
+		background-color: $colorLightBlue;
+	}
+}
+.content{
+        background-color: $colorLight;
+        border-radius: $spacing-smaller;
+       /* box-shadow: 0 $spacing-small $spacing-normal rgba(0,0,0,0.25), 0 $spacing-smaller $spacing-smaller rgba(0,0,0,0.22);*/
+        position: relative;
+        overflow: hidden;
+        width: $spacing-largest*10;
+        max-width: 100%;
+        min-height: $spacing-largest*6;
+        
+}   
+.form-content {
+	position: absolute;
+	top: 0;
+}
+form {
+	background-color: $colorLight;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 $spacing-largest*3;
+	height: 20%;
+	text-align: center;
+}
+input {
+	background-color: $colorLightGray;
+	border: none;
+	padding: $spacing-small;
+	margin: $spacing-smaller 0;
+	width: 100%;
+	border-radius: 5px;
+}
+
+form .error-text{
+    margin: $spacing-smaller 0;
+    background-color: #f8d7da;
+    color:#8b3e46 ;
+    font-size:$font-normal;
+    padding: $spacing-small $spacing-large;
+    border-radius:5px ;
+    width: 100%;
+    display: none;
+
+}
+form .error-text:before{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #f8d7da;
+    right:20px ;
+    top: -7px;
+    transform:rotate(45deg) ;
+}
+.v45_20 img{
+	width: 2%;
+	position: absolute;
+	top: 611px;
+	left: 30px;
+
+}
+.v45_21{
+	width: 220px;
+	position: absolute;
+	top: 596px;
+	left:-120px;
+	font-family: Poppins;
+	font-weight: Regular;
+	font-size: $font-normal;
+	opacity: 1;
+	text-align: left;
+	color:$colorDark;
+}
+.v45_22{
+	position: absolute;
+	top: 479px;
+	left: 80%;
+	size: 10px;
+	/*transform:rotate(-360deg) ;*/
+}

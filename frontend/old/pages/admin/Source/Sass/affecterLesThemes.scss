@@ -1,0 +1,235 @@
+@import "../../../shared/Sass/base";
+
+
+// Page styles
+.pageAffecterLesThemes {
+
+	// Make the page centered 
+	margin-left: auto;
+	margin-right: auto;
+
+	// Give it a maximum width
+	max-width: $spacing-largest*16;
+
+	// Give it some padding
+	padding: $spacing-largest;
+
+	// The title of the page
+	h1 {
+		// Specify which area in the grid it has
+		grid-area: title;
+
+		// Font properties
+		font-weight: 600;
+		font-size: $font-largest;
+
+		// Some spacing
+		margin-bottom: $spacing-largest;
+	}
+
+	// The container of the buttons
+	>div:nth-child(2) {
+		// Align the buttons to the right of the page
+		text-align: right;
+
+		// The style of each button
+		>button {
+			// Smooth animations
+			transition: all 0.2s ease;
+
+			// Some spacing
+			padding: $spacing-small;
+			margin: 0px $spacing-normal $spacing-largest $spacing-normal;
+
+			// Round corners
+			border-radius: $spacing-small;
+
+			// Remove the border
+			border: none;
+
+			// Set color
+			background-color: $colorLightBlue;
+			color: $colorLight;
+
+			// Give it a box shadow
+			box-shadow: 0px 0px $spacing-smaller $colorLightBlue;
+
+			// On hover
+			&:hover {
+				// Set cursor to be pointer
+				cursor: pointer;
+
+				// Set background color
+				background-color: $colorOrange;
+
+				// Set the new box shadow
+				box-shadow: 0px 0px $spacing-normal $colorOrange;
+			}
+		}
+	}
+
+	// The list of themes 
+	>.themesList {
+
+		// The theme element and all the teams in it
+		>div {
+			// Give it a border
+			border: 2px solid $colorLightBlue;
+
+			// Some spacing
+			margin: $spacing-normal;
+			padding: $spacing-normal;
+
+
+			// Right align everything
+			text-align: right;
+			border-radius: $spacing-normal;
+
+			// The title of the theme
+			>span {
+				// Give it a bigger font
+				font-size: $font-large;
+				font-weight: 500;
+
+				// Left align the theme title
+				float: left;
+			}
+
+			// The bottom arrow 
+			>i {
+				// The color of the arrow
+				border: solid $colorBlue;
+
+				// Thickness of the arrow
+				border-width: 0 3px 3px 0;
+
+				// Make it inline
+				display: inline-block;
+
+				// The size of the arrow
+				padding: 4px;
+
+				// Make it point down
+				transform: rotate(45deg);
+				-webkit-transform: rotate(45deg);
+
+				// On hover
+				&:hover {
+					// Hint to the user that it is clickable
+					cursor: pointer;
+				}
+			}
+
+			// Button reinitialiser
+			>button {
+				// Smooth transitions
+				transition: all 0.3s ease;
+
+				// Background color
+				background-color: $colorLightGray;
+
+				// Remove border
+				border: none;
+
+				// Rounded corners
+				border-radius: $spacing-smaller;
+
+				// Some spacing
+				padding: $spacing-smaller;
+				margin: 0px $spacing-normal;
+
+				// On hover
+				&:hover {
+					// Set cursor to be pointer
+					cursor: pointer;
+
+					// Set color
+					background-color: $colorOrange;
+					color: $colorLight;
+
+					// Give it a drop shadow
+					box-shadow: 0px 0px $spacing-normal $colorOrange;
+				}
+			}
+
+			// The list of all the teams that chose this theme
+			>div {
+
+				// Some spacing	
+				padding: $spacing-normal;
+
+				// The infos of the team
+				>div {
+
+					// Give it a border
+					border-bottom: 3px solid $colorLightBlue;
+
+					// Some spacing
+					margin-top: $spacing-normal;
+
+					// The priorety of the the theme in the teams wishlist
+					>span:nth-child(1) {
+						// Left align it
+						float: left;
+
+						// Some spacing
+						margin: 0px $spacing-normal;
+					}
+
+					// The name of the team leader
+					>span:nth-child(2) {
+						// Give it some spacing
+						margin: 0px $spacing-normal 0px 0px;
+
+						// Left align it
+						float: left;
+
+					}
+
+					// The delete button
+					>button {
+						// Give it some spacing
+						margin: 0px $spacing-normal;
+						padding: 0px $spacing-smaller;
+
+						// Transparent background
+						background-color: transparent;
+
+						// Remove the border
+						border: none;
+
+						// Rounded corners
+						border-radius: $spacing-smaller;
+
+						// Set font size
+						font-size: $font-large;
+
+						// Set color
+						color: $colorLightBlue;
+
+						// On hover
+						&:hover {
+							cursor: pointer;
+							color: $colorOrange;
+						}
+					}
+
+
+				}
+			}
+
+
+		}
+	}
+}
+
+.hidden {
+	visibility: collapse;
+	display: none;
+	height: 0px;
+	padding: 0px !important;
+}
+
+.selected {
+	border-bottom: 3px solid $colorOrange !important;
+}

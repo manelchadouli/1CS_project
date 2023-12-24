@@ -1,0 +1,11 @@
+// Base properties to give our website more uniformity
+$base-spacing-unit: 24px !default;
+$base-line-height: 1.6em !default;
+
+// Spacing sizes
+$spacing-smaller: $base-spacing-unit / 2.5 !default;
+$spacing-small: $base-spacing-unit / 1.5 !default;
+$spacing-normal: $base-spacing-unit !default;
+$spacing-large: $base-spacing-unit * 1.5 !default;
+$spacing-larger: $base-spacing-unit * 2 !default;
+$spacing-largest: $base-spacing-unit * 3 !default;

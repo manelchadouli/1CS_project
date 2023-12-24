@@ -1,0 +1,352 @@
+@import "../../../shared/Sass/base";
+
+
+// Page styles
+.themes-page {
+
+	// Make the page centered 
+	margin-left: auto;
+	margin-right: auto;
+
+	// Give it a maximum width
+	max-width: $spacing-largest*16;
+
+	// Give it some padding
+	padding: $spacing-large;
+
+	// The title of the page
+	h1 {
+		opacity: 100%;
+		font-weight: 500;
+		font-size: $font-largest;
+		margin-bottom: $spacing-largest;
+		margin-top: $spacing-normal;
+	}
+
+	// Table styles
+	table {
+
+		// Give the table a border and a border radius
+		border: 1px solid $colorGray;
+		border-radius: $spacing-small;
+
+		// Give the bottom and top rows a border radius so it doesn't overlap the table border radius		
+		tr:first-child th:first-child {
+			border-top-left-radius: $spacing-smaller;
+
+		}
+
+		tr:first-child th:last-child {
+			border-top-right-radius: $spacing-smaller;
+
+		}
+
+		// Make it take full width
+		width: 100%;
+
+		// Remove the separation between the cells
+		border-spacing: 0px;
+
+		// Table cells, and header styles
+		td,
+		th {
+			padding: $spacing-smaller $spacing-small;
+		}
+
+		// Table header
+		th {
+			background-color: $colorGray;
+			color: $colorLight;
+			padding: $spacing-small;
+		}
+
+		// Row styles
+		tr {
+			* {
+				// Align content to the right
+				text-align: left;
+			}
+
+			td {
+				// Give it a line bellow to separate it from other rows
+				border-bottom: 1px solid $colorGray;
+
+				// Set the maximum width of a table cell	
+				max-width: $spacing-largest*7;
+
+				// Stop line break 
+				white-space: nowrap;
+
+				// Hide overflow of text
+				overflow: hidden;
+				text-overflow: ellipsis;
+
+				// Style the title
+				h4 {
+					// Hide text overflow 
+					overflow: hidden;
+					text-overflow: ellipsis;
+
+					// Set the font size and weight
+					font-size: $font-large;
+					font-weight: 500;
+				}
+
+				font-size: $font-normal;
+
+				// Style of the accept and reject buttons
+				button {
+					transition: ease-in 200ms;
+					padding: 0px;
+					background-color: transparent;
+					border: none;
+
+					&:focus,
+					&:hover {
+						color: $colorLightBlue;
+						cursor: pointer;
+					}
+
+					font-size: $font-normal;
+				}
+			}
+
+			// The description
+			td:nth-child(1) {
+				span {
+					opacity: 50%;
+				}
+			}
+
+			// Nom de l'encadreur
+			:nth-child(2) {
+				// Set the maximum width of the name of encadreur
+				max-width: $spacing-largest*3;
+			}
+
+			// The green check
+			:nth-child(3) {
+				padding-left: $spacing-largest;
+				padding-right: 0px;
+
+				span {
+					font-weight: 800;
+					margin: $spacing-smaller;
+					color: green;
+				}
+			}
+
+			// Red x mark
+			:nth-child(4) {
+				padding-left: 0px;
+
+				span {
+					font-weight: 800;
+					margin: $spacing-smaller;
+					color: red;
+				}
+			}
+
+			// See more button
+			:nth-child(5) {
+				button {
+					padding: 0px $spacing-smaller;
+					font-family: sans-serif;
+					transform: scale(1, 2);
+				}
+			}
+		}
+
+
+	}
+
+}
+
+// Page compte etudiant styles
+.pageGestionCompte {
+
+	// Make the page centered 
+	margin-left: auto;
+	margin-right: auto;
+
+	// Give it a maximum width
+	max-width: $spacing-largest*16;
+
+	// Give it some padding
+	padding: $spacing-large;
+
+	// The title of the page
+	h1 {
+		opacity: 100%;
+		font-weight: 500;
+		font-size: $font-largest;
+		margin-bottom: $spacing-largest;
+		margin-top: $spacing-normal;
+	}
+
+	// Table styles
+	table {
+
+		// Give the table a border and a border radius
+		border: 1px solid $colorGray;
+		border-radius: $spacing-small;
+
+		// Give the bottom and top rows a border radius so it doesn't overlap the table border radius		
+		tr:first-child th:first-child {
+			border-top-left-radius: $spacing-smaller;
+
+		}
+
+		tr:first-child th:last-child {
+			border-top-right-radius: $spacing-smaller;
+
+		}
+
+		// Make it take full width
+		width: 100%;
+
+		// Remove the separation between the cells
+		border-spacing: 0px;
+
+		// Table cells, and header styles
+		td,
+		th {
+			padding: $spacing-smaller $spacing-small;
+		}
+
+		// Table header
+		th {
+			background-color: $colorGray;
+			color: $colorLight;
+			padding: $spacing-small;
+		}
+
+		// Row styles
+		tr {
+			* {
+				// Align content to the right
+				text-align: left;
+			}
+
+			td {
+				// Give it a line bellow to separate it from other rows
+				border-bottom: 1px solid $colorGray;
+
+				// Set the maximum width of a table cell	
+				max-width: $spacing-largest*7;
+
+				// Stop line break 
+				white-space: nowrap;
+
+				// Hide overflow of text
+				overflow: hidden;
+				text-overflow: ellipsis;
+
+				// Style the title
+				h4 {
+					// Hide text overflow 
+					overflow: hidden;
+					text-overflow: ellipsis;
+
+					// Set the font size and weight
+					font-size: $font-large;
+					font-weight: 500;
+				}
+
+				font-size: $font-normal;
+
+				// Style of buttons
+				button {
+					transition: ease-in 200ms;
+					padding: 0px;
+					background-color: transparent;
+					border: none;
+
+					&:focus,
+					&:hover {
+						color: $colorLightBlue;
+						cursor: pointer;
+					}
+
+					font-size: $font-normal;
+				}
+			}
+
+			// The description
+			td:nth-child(1) {
+				span {
+					opacity: 50%;
+				}
+			}
+
+			// Nom de l'encadreur
+			:nth-child(2) {
+				// Set the maximum width of the name of encadreur
+				max-width: $spacing-largest*3;
+			}
+
+
+
+			// See more button
+			:nth-child(5) {
+				button {
+					padding: 0px $spacing-smaller;
+					font-family: sans-serif;
+					transform: scale(1, 2);
+				}
+			}
+		}
+
+
+	}
+
+	.ajouterE {
+		text-align: right;
+	}
+
+	button.AjouterE {
+		// Animation properties
+		transition: ease-in 200ms;
+
+		// Button properties
+		background-color: $colorLight;
+		border: 2px solid $colorLightBlue;
+		color: $colorLightBlue;
+		padding: $spacing-smaller $spacing-large;
+		margin: $spacing-small $spacing-normal;
+		border-radius: $spacing-small;
+		display: inline-block;
+
+		// Hover properties
+		&:hover {
+			// Animate the button on hover
+			//         name        duration persistent delay
+			animation: neon-border 0.3s forwards 0.5s, color-text 0.2s forwards;
+		}
+
+	}
+
+	button.importer {
+		// Animation properties
+		transition: ease-in 200ms;
+
+		// Button properties
+		background-color: $colorBlue;
+		border: 2px solid $colorBlue;
+		color: $colorLight;
+		padding: $spacing-smaller $spacing-large;
+		margin: $spacing-small $spacing-normal;
+		border-radius: $spacing-small;
+		display: inline-block;
+
+		// Hover properties
+		&:hover {
+			// Animate the button on hover
+			//         name        duration persistent delay
+			animation: neon-border 0.3s forwards 0.5s, color-text 0.2s forwards;
+		}
+
+
+	}
+
+}

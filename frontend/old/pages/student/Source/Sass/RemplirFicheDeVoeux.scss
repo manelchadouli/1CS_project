@@ -1,0 +1,359 @@
+@import "../../../shared/Sass/base";
+
+
+// Page styles
+.fiche {
+
+    // Make the page centered 
+    margin-left: auto;
+    margin-right: auto;
+
+    // Give it a maximum width
+    max-width: $spacing-largest*16;
+
+    // Give it some padding
+    padding: $spacing-largest;
+
+
+    // Make the page display as a grid
+    display: grid;
+
+    // Set the layout of the grid
+    grid-template-areas:
+        "title title"
+        "choix themes";
+
+    // Give it some spacing
+    column-gap: $spacing-largest;
+
+    // Make columns have same width
+    grid-template-columns: 1fr 1fr;
+
+
+    // The title of the page
+    h1 {
+        // Specify which area in the grid it has
+        grid-area: title;
+
+        // Font properties
+        font-weight: 600;
+        font-size: $font-largest;
+
+        // Some spacing
+        margin-bottom: $spacing-large;
+
+    }
+
+    // The choices container
+    >.choix {
+        // Specify which area in the grid it has
+        grid-area: choix;
+
+        // Title of the choices container
+        >h2 {
+            // Set text color
+            color: $colorOrange;
+
+            // Font properties
+            font-weight: 600;
+            font-size: $font-large;
+
+            // Some spacing
+            margin-bottom: $spacing-large;
+            margin-top: $spacing-normal;
+            margin-left: $spacing-smaller;
+        }
+
+        // Scrollbar for other browsers
+        ::-webkit-scrollbar {
+            width: $spacing-small;
+        }
+
+        ::-webkit-scrollbar-track {
+            border-radius: $spacing-small;
+            background-color: $colorLight;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: $spacing-small;
+            background-color: $colorLightGray;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: $colorGray;
+        }
+
+        // Choices list container
+        >div {
+            // Scrollbar color and width for firefox
+            scrollbar-color: $colorGray $colorLight;
+            scrollbar-width: thin;
+            // Some space from the bottom
+            padding-bottom: $spacing-normal;
+
+            // Make over flow scroll 	   
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            // Give it a max height
+            max-height: $spacing-largest *5;
+
+
+            // The choice style
+            >div {
+                // Make the children align relative to this div
+                position: relative;
+
+                // The arrow 
+                >span>i {
+                    // right align this element
+                    position: absolute;
+                    right: $spacing-normal;
+
+                    // The color of the arrow
+                    border: solid $colorOrange;
+
+                    // Thickness of the arrow
+                    border-width: 0 3px 3px 0;
+
+                    // Make it inline
+                    display: inline-block;
+
+                    // The size of the arrow
+                    padding: 4px;
+
+                    // On hover
+                    &:hover {
+                        // Hint to the user that it is clickable
+                        cursor: pointer;
+                    }
+                }
+
+                // Bottom pointing arrow
+                span>:nth-child(1) {
+                    // Make it point down
+                    transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    top: $spacing-large;
+
+                }
+
+                // Up pointing arrow
+                span>:nth-child(2) {
+                    // Make it point down
+                    transform: rotate(225deg);
+                    -webkit-transform: rotate(225deg);
+                    top: $spacing-normal;
+                }
+
+                // Give this element a border and a box shadow
+                border: 1px solid $colorLightGray;
+                box-shadow: 0px 0px $spacing-smaller $colorLightGray;
+
+                // Give it some corner radius
+                border-radius: $spacing-normal;
+
+                // Some padding and margin
+                padding: $spacing-normal;
+                margin-top: $spacing-normal;
+                margin-right: $spacing-normal;
+                margin-left: $spacing-smaller;
+
+                // More space between lines
+                line-height: 1.3;
+
+                // Make the text all in one line
+                display: inline-block;
+
+                // Set oferflow for text
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                // Some spacing
+                padding-right: $spacing-largest *2;
+
+                // Max width
+                width: $spacing-largest * 4;
+
+                // Stype for button
+                >button {
+                    // Make position absolute
+                    position: absolute;
+
+                    // Position the button
+                    right: $spacing-largest;
+                    top: $spacing-normal;
+
+                    // Remove background
+                    background-color: transparent;
+
+                    border: none;
+                    border-radius: $spacing-small;
+                    font-weight: 700;
+                    color: $colorOrange;
+                    letter-spacing: -2px;
+                    font-weight: 600;
+
+                    // Some spacing
+                    padding: 0px $spacing-small;
+
+                    // On hover
+                    &:hover {
+                        // Change cursor
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    // The themes container
+    >.themes {
+        // Specify which area in the grid it has
+        grid-area: themes;
+
+        // Title of the teachers container
+        >span>h2 {
+            // Set text color
+            color: $colorLightBlue;
+
+            // Font properties
+            font-weight: 600;
+            font-size: $font-large;
+
+            // Some spacing
+            margin-bottom: $spacing-normal;
+            margin-top: $spacing-normal;
+            margin-left: $spacing-normal;
+
+            // Allow other content to flow after this title
+            display: inline-block;
+        }
+
+
+        >span>button {
+            // Set forground color
+            color: $colorLightBlue;
+
+            // Give it a border
+            border: 2px solid $colorLightBlue;
+
+            // Set the background color
+            background-color: transparent;
+
+            // Give it some spacing
+            padding: $spacing-smaller $spacing-normal;
+            margin: $spacing-small $spacing-normal;
+
+
+            // Give it a border radius
+            border-radius: $spacing-small;
+
+            // On hover and focus
+            &:hover,
+            &:focus {
+
+                // Give the button a box shadow
+                box-shadow: 0px 0px $spacing-small $colorLightBlue;
+
+                // Make the cursor a hand, indicating it's a clickable thing
+                cursor: pointer;
+            }
+        }
+
+        // The container of the title and the send button
+        >span {
+            // Make content align to the sides
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        // Scrollbar for other browsers
+        ::-webkit-scrollbar {
+            width: $spacing-small;
+        }
+
+        ::-webkit-scrollbar-track {
+            border-radius: $spacing-small;
+            background-color: $colorLight;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: $spacing-small;
+            background-color: $colorLightGray;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: $colorGray;
+        }
+
+        // Themes list container
+        >div {
+            // Scrollbar color and width for firefox
+            scrollbar-color: $colorGray $colorLight;
+            scrollbar-width: thin;
+
+            // Some space from the bottom
+            padding-bottom: $spacing-normal;
+
+            // Make over flow scroll
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            // Give it a max height
+            max-height: $spacing-largest *5;
+
+            // Each theme element
+            >div {
+                >span {
+                    // Make the text all in one line
+                    display: inline-block;
+
+                    // Set oferflow for text
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                >button {
+                    background-color: transparent;
+                    border: none;
+                    font-weight: 700;
+                    color: $colorLightBlue;
+
+                    padding: 0px $spacing-small;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                // Make content take all available space
+                display: flex;
+                justify-content: space-between;
+
+                // Set maximum width
+                width: $spacing-largest *8;
+
+                // Some spacing
+                padding: $spacing-normal $spacing-small;
+                margin: $spacing-normal;
+                border-radius: $spacing-small;
+
+
+                // Give this element a border and a box shadow
+                border: 1px solid $colorLightGray;
+                box-shadow: 0px 0px $spacing-smaller $colorLightGray;
+
+
+            }
+        }
+
+    }
+
+
+}

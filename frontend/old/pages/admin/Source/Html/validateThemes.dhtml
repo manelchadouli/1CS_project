@@ -1,0 +1,19 @@
+<!--@ include header @-->
+
+<div class="page-container">
+    <div class="themes-page">
+        <h1>page de validation de themes</h1>
+        <!-- The javascript doesn't work if i leave a space or new line between the <table> and the <tr>,
+            that is stupid -->
+        <table id="table-validation-themes"><tr>
+                <th>titre et description</th>
+                <th>encadreur</th>
+                <th>accepter</th>
+                <th>rejeter</th>
+                <th>plus</th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!--@ include footer @-->

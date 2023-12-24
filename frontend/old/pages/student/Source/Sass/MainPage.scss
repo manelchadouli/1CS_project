@@ -1,0 +1,367 @@
+@import "../../../shared/Sass/base";
+
+.mainPage {
+
+    // Give it some padding
+    padding: $spacing-larger $spacing-largest $spacing-largest*2 $spacing-largest;
+
+    // The title of the page
+    >h1 {
+        // Give it a big font size
+        font-size: $font-largest;
+        margin-bottom: $spacing-larger;
+    }
+
+    // The container of the list of livrables and add livrable
+    >.content {
+
+        // Make the page display as a grid
+        display: grid;
+
+        // Set the layout of the grid
+        grid-template-areas: "livrables ajouter";
+
+        // Liste des livrables
+        >div:nth-child(1) {
+            // Set area in grid
+            grid-area: livrables;
+
+            // Give the list a min and max width
+            max-width: $spacing-largest*11;
+            min-width: $spacing-largest*10;
+
+            // The style of each item
+            >div {
+                // Some spacing
+                margin: $spacing-normal;
+                padding: $spacing-small $spacing-smaller;
+
+                // Give it border
+                border: 2px solid $colorLightGray;
+
+                // Give it a drop shadow
+                box-shadow: 0px 0px $spacing-smaller $colorLightGray;
+
+                // Rounded corners
+                border-radius: $spacing-small;
+
+                // Set font weight to be thicker
+                font-weight: 600;
+
+                // The download button
+                >span>*:nth-child(2) {
+
+                    // On hover
+                    &:hover {
+                        // Hint to the user that it is clickable
+                        cursor: pointer;
+                    }
+
+                }
+
+                // The drop down arrow
+                >span>i:nth-child(1) {
+                    // The color of the arrow
+                    border: solid $colorOrange;
+                    // Thickness of the arrow
+                    border-width: 0 3px 3px 0;
+
+                    // The size of the arrow
+                    padding: 4px;
+
+                    // Some spacing in the bottom
+                    margin-bottom: 3px;
+
+                    // Make it inline
+                    display: inline-block;
+
+                    // Make it point down
+                    transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+
+                    // On hover
+                    &:hover {
+                        // Hint to the user that it is clickable
+                        cursor: pointer;
+                    }
+
+
+                }
+
+                // The text style
+                >span {
+                    // Set oferflow for text
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    // Some spacing
+                    margin: 0px $spacing-small;
+
+                    // Display it in one line
+                    display: inline-block;
+                }
+
+                // Specify the width of the children
+                >*:nth-child(1) {
+                    width: 35%;
+                    color: $colorBlue;
+                }
+
+                >*:nth-child(2) {
+                    color: $colorBlue;
+                    width: 37%;
+                }
+
+                >*:nth-child(3) {
+                    width: 12%;
+                    text-align: right;
+
+                    // Icons inside the last element
+                    >* {
+                        margin: 0px 2px 0px $spacing-small;
+                    }
+                }
+
+                // Comments container
+                >div {
+                    // Some spacing
+                    padding: $spacing-normal $spacing-normal $spacing-small $spacing-large;
+
+                    // Comment style
+                    >p {
+                        // Set color
+                        color: rgba($colorDark, 0.6);
+
+                        // Some spacing
+                        padding: $spacing-normal $spacing-smaller 4px $spacing-smaller;
+
+                        border-bottom: 2px solid $colorGray;
+                    }
+
+                    // When we want it to not be visible
+                    &.hidden {
+                        visibility: collapse;
+                        display: none;
+                        height: 0px;
+                        padding: 0px !important;
+                    }
+                }
+
+
+            }
+        }
+
+        // Ajouter livrable area
+        >div:nth-child(2) {
+            // Some spacing
+            padding: 0px 0px 0px $spacing-small;
+
+            // Set max width
+            max-width: 100%;
+
+            // Set area in the grid
+            grid-area: ajouter;
+
+            // Add livrable title
+            >h2 {
+                // Set font size
+                font-size: $font-large;
+
+                // Give it some spacing
+                margin: $spacing-normal $spacing-normal $spacing-small 0px;
+
+                color: $colorLightBlue;
+            }
+
+            // Title text field
+            textarea {
+                // Don't allow the user to resize the text field
+                resize: none;
+
+                // Give the text inside some padding
+                padding: $spacing-small;
+
+                // Make the background transparent
+                background-color: transparent;
+
+                // Make it's sizing border box, so we don't have any more margins when we give it a border
+                box-sizing: border-box;
+
+                // Make it take all available space
+                width: 100%;
+
+                // Set height
+                height: $spacing-largest;
+
+                // Give it a border radius
+                border-radius: $spacing-smaller;
+
+                // Give it a border
+                border: 1px solid $colorGray;
+
+                // Give it a slight box shadow
+                box-shadow: 0px 0px 4px $colorGray;
+
+                // Set the background color
+                background-color: $colorLight;
+
+                // Give it some spacing from the top and bottom
+                margin-top: $spacing-smaller;
+                margin-bottom: $spacing-normal;
+
+                // When focused
+                &:focus {
+                    // Give the text field a border
+                    border: 2px solid $colorLightBlue;
+
+                    // And give it a box shadow
+                    box-shadow: 0px 0px 4px $colorLightBlue;
+
+                    // Remove the ugly outline that comes by default
+                    outline: none;
+                }
+            }
+
+            // Label style
+            label {
+                // Set font size and weight
+                font-size: $font-large;
+                font-weight: 500;
+            }
+
+            // Upload icon container
+            >span {
+                // Make display flex
+                display: flex;
+
+                // Center content
+                justify-content: center;
+                align-items: center;
+
+                // Make element flow from top to bottom
+                flex-direction: column;
+
+                // Give it a border
+                border: 2px solid $colorLightBlue;
+
+                // Rounded corners
+                border-radius: $spacing-small;
+
+                // Give it some spacing
+                margin-top: $spacing-normal;
+                margin-bottom: $spacing-normal;
+
+                // When a file is selected
+                &.selected {
+                    // Give it a box shadow
+                    box-shadow: 0px 0px $spacing-smaller $colorLightBlue;
+                }
+
+                // Set the input style
+                >input {
+                    // Make it position absolute
+                    position: absolute;
+
+                    // Make pointer indicating clickable
+                    cursor: pointer;
+
+                    // Set height
+                    height: $spacing-large*5;
+
+                    // Make invisible
+                    opacity: 0;
+                }
+
+                // Upload icon style
+                >img {
+                    // Set height
+                    height: $spacing-large*6;
+                }
+            }
+
+
+            // Button container
+            >div {
+                // Align the button to the right
+                text-align: right;
+
+                // Button style
+                >button {
+                    // Some spacing
+                    padding: $spacing-smaller;
+
+                    // Rounded corners
+                    border-radius: $spacing-smaller;
+
+                    // Give it a border
+                    border: 2px solid $colorLightBlue;
+
+                    // Set background
+                    background-color: $colorLight;
+
+                    // Set foreground
+                    color: $colorLightBlue;
+
+                    // On hover and focus
+                    &:hover,
+                    &:focus {
+
+                        // Give the button a box shadow
+                        box-shadow: 0px 0px $spacing-smaller $colorLightBlue;
+
+                        // Make the cursor a hand, indicating it's a clickable thing
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
+
+
+//  // The top part of the page that will contain the buttons
+//  >.header {
+//     // Align content to the right
+//     text-align: right;
+
+//     // Some spacing
+//     padding: $spacing-small 0px;
+
+//     >button {
+
+//         // Set forground color
+//         color: $colorLightBlue;
+
+//         // Give it a border
+//         border: 2px solid $colorLightBlue;
+
+//         // Set the background color
+//         background-color: $colorLight;
+
+//         // Give it some spacing
+//         padding: $spacing-small $spacing-normal;
+//         margin: $spacing-small;
+
+//         // Give it a border radius
+//         border-radius: $spacing-small;
+
+//         // On hover and focus
+//         &:hover,
+//         &:focus {
+
+//             // Give the button a box shadow
+//             box-shadow: 0px 0px $spacing-small $colorLightBlue;
+
+//             // Make the cursor a hand, indicating it's a clickable thing
+//             cursor: pointer;
+//         }
+
+
+
+//     }
+
+// }

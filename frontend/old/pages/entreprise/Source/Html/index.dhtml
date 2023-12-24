@@ -1,0 +1,172 @@
+<!--@ include header @-->
+<div class="popup-container">
+        <div>
+            <button class="close">close popup</button>
+        </div>
+    </div>
+    
+    <div class="page-container">
+    <h1>Gestion des comptes des entreprise </h1>
+    <div class="ajouterE">
+     
+    <button class="AjouterE" > Ajouter
+        
+        <i class="fa fa-user" style="font-size:10px "></i>
+    </button>
+     
+ 
+   <button class="importer"> Importer 
+        <i class="fa fa-download" style="font-size:10px "></i>
+    </button>
+     </div>
+    <table>
+        <tr>
+            <th>Nom de l'Entreprise </th>
+            <th>Domaine</th>
+            
+            <th>Email</th>
+            
+            <th>Supprimer</th>
+            <th>modifier</th>
+        </tr>
+        
+        <tr>
+                <td><h4>entreprise</h4><span>link entreprise</span></td>
+                <td>petrochimique</td>
+            
+            <td>
+                
+                   <span>support@sonatrac.com</span>
+          </td>
+           
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        
+        <tr>
+                <td><h4>entreprise</h4><span>link entreprise</span></td>
+                <td>petrochimique</td>
+            
+            <td>
+                
+                   <span>support@sonatrac.com</span>
+          </td>
+           
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        <tr>
+                <td><h4>entreprise</h4><span>link entreprise</span></td>
+                <td>petrochimique</td>
+            
+            <td>
+                
+                   <span>support@sonatrac.com</span>
+          </td>
+           
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        <tr>
+                <td><h4>entreprise</h4><span>link entreprise</span></td>
+                <td>petrochimique</td>
+            
+            <td>
+                
+                   <span>support@sonatrac.com</span>
+          </td>
+           
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        
+        <tr>
+                <td><h4>entreprise</h4><span>link entreprise</span></td>
+                <td>petrochimique</td>
+            
+            <td>
+                
+                   <span>support@sonatrac.com</span>
+          </td>
+           
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        
+        <tr>
+                <td><h4>entreprise</h4><span>link entreprise</span></td>
+                <td>petrochimique</td>
+            
+            <td>
+                
+                   <span>support@sonatrac.com</span>
+          </td>
+           
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        
+        <tr>
+                <td><h4>entreprise</h4><span>link entreprise</span></td>
+                <td>petrochimique</td>
+            
+            <td>
+                
+                   <span>support@sonatrac.com</span>
+          </td>
+           
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        
+        <tr>
+                <td><h4>entreprise</h4><span>link entreprise</span></td>
+                <td>petrochimique</td>
+            
+            <td>
+                
+                   <span>support@sonatrac.com</span>
+          </td>
+           
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>
+        
+        <tr>
+                <td><h4>entreprise</h4><span>link entreprise</span></td>
+                <td>petrochimique</td>
+            
+            <td>
+                
+                   <span>support@sonatrac.com</span>
+          </td>
+           
+            <td><button><i class="fa fa-trash-o" style="font-size:20px "></i>
+                <span></span></button></td>
+                <td><button><i class="fa  fa-pencil" style="font-size:20px "></i>
+                        <span></span></button></td>
+        </tr>  
+    </div>
+    
+    
+    
+   </table>
+ 
+    
+    <!--@ include footer @-->
